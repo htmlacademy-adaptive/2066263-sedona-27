@@ -1,7 +1,7 @@
 # Личный проект «Седона» 
 
 * Студент: [Svetlana Burakova](https://up.htmlacademy.ru/adaptive/27/user/2066263).
-* Наставник: `Неизвестно`.
+* Наставник: `Александр Зиновьев` (https://htmlacademy.ru/profile/id198751).
 
 ---
 
