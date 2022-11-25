@@ -8,12 +8,12 @@
     <header class="page-header">
       <nav class="page-nav">
         <ul class="nav-list">
-          <li class="nav-list__item"><a class="nav-list__link"  href="#">Главная</a></li>
-          <li class="nav-list__item"><a class="nav-list__link"  href="#">Фото и видео</a></li>
+          <li class="nav-list__item"><a class="nav-list__link"  href="index.html">Главная</a></li>
+          <li class="nav-list__item"><a class="nav-list__link"  href="gallery.html">Фото и видео</a></li>
         </ul>
         <ul class="nav-items">
-          <li class="nav-items__item"><a class="nav-items__link" href="#">Форма Отзыва</a></li>
-          <li class="nav-items__item"><a class="nav-items__link" href="#">HTML ACADEMY</a></li>
+          <li class="nav-items__item"><a class="nav-items__link" href="form.html">Форма Отзыва</a></li>
+          <li class="nav-items__item"><a class="nav-items__link" href="https://htmlacademy.ru">HTML ACADEMY</a></li>
         </ul>
         <button class="page-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span>
         </button>
@@ -28,41 +28,48 @@
         <h1 class="catalog-intro__title">Фото и видео</h1>
         <p class="catalog-intro__desc">Не можете решиться на путешествие из-за курса? Фотографии помогут вам забыть о политике и экономике.</p>
       </section>
-      <section class="gallery">
-        <h1 class="visually-hidden">Галерея фотографий</h1>
-        <div class="gallery__wrapper">
-          <img class="catalog-photo" src="img/img-catalog/countryside-mobile.jpg" width="280" height="280" loading="lazy" alt="Привлекательная местность Седоны.">
+      <ul class="gallery">
+        <li class="gallery__item gallery__item--large">
+          <a class="photo-link">
+            <img class="catalog-photo" src="img/img-catalog/countryside-mobile.jpg" width="280" height="280" loading="lazy" alt="Привлекательная местность Седоны.">
+          </a>
           <section class="photo-desc">
             <h2 class="photo-desc__title">Неродные просторы</h2>
             <p class="photo-desc__autor">Автор фото: Борис</p>
             <div class="photo-desc__likes">1350</div>
           </section>
-        </div>
-        <div class="gallery__wrapper">
-          <img class="catalog-photo" src="img/img-catalog/plants-mobile.jpg" width="280" height="280" loading="lazy" alt="Удивительные растения Седоны.">
+        </li>
+        <li class="gallery__iteme">
+          <a class="photo-link">
+            <img class="catalog-photo" src="img/img-catalog/plants-mobile.jpg" width="280" height="280" loading="lazy" alt="Удивительные растения Седоны.">
+          </a>
           <section class="photo-desc">
             <h2 class="photo-desc__title">Местная растительность</h2>
             <p class="photo-desc__autor">Автор фото: Сергей</p>
             <div class="photo-desc__likes">143</div>
           </section>
-        </div>
-        <div class="gallery__wrapper">
-          <img class="catalog-photo" src="img/img-catalog/road-mobile.png" width="280" height="280" loading="lazy" alt="Извилистая дорога у каньона.">
-          <section class="photo-desc">
+        </li>
+        <li class="gallery__iteme">
+          <a class="photo-link">
+            <img class="catalog-photo" src="img/img-catalog/road-mobile.png" width="280" height="280" loading="lazy" alt="Извилистая дорога у каньона.">
+          </a>
+            <section class="photo-desc">
             <h2 class="photo-desc__title">Дорога на север</h2>
             <p class="photo-desc__autor">Автор фото: Петр</p>
             <div class="photo-desc__likes">96</div>
           </section>
-        </div>
-        <div class="gallery__wrapper">
-          <img class="catalog-photo" src="img/img-catalog/bridge-mobile.jpg" width="280" height="280" loading="lazy" alt="Вид на красную скалу Мост Дьявола.">
+        </li>
+        <li class="gallery__iteme">
+          <a class="photo-link">
+            <img class="catalog-photo" src="img/img-catalog/bridge-mobile.jpg" width="280" height="280" loading="lazy" alt="Вид на красную скалу Мост Дьявола.">
+          </a>
           <section class="photo-desc">
             <h2 class="photo-desc__title">Мост дьявола</h2>
             <p class="photo-desc__autor">Автор фото: Антон</p>
             <div class="photo-desc__likes">254</div>
           </section>
-        </div>
-      </section>
+        </li>
+      </ul>
       <section class="catalog-video">
         <h1 class="visually-hidden">Видеопрезентация путешествия в Седону</h1>
         <section class="catalog-video__intro">
