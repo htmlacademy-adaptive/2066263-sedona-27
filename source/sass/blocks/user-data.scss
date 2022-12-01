@@ -1,0 +1,27 @@
+.user-data {
+  margin: 16px 0;
+  padding: 0;
+}
+
+.user-data__label {
+  @extend %font-desc;
+  text-align: start;
+  font-weight: 700;
+  display: block;
+}
+
+.user-data__input-user {
+  @extend %font-title;
+  font-weight: 700;
+  text-transform: none;
+  text-align: start;
+  display: block;
+}
+
+.user-data__input-user::placeholder {
+  @extend %font-title;
+  text-align: start;
+  opacity: 30%;
+  text-transform: none;
+  font-weight: 700;
+}

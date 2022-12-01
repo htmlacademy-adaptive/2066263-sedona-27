@@ -1,0 +1,32 @@
+%list {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+%font-title {
+  font-family: "PT Sans", sans-serif;
+  font-size: 18px;
+  line-height: 26px;
+  color: #000000;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+%font-desc {
+  font-family: "PT Sans", sans-serif;
+  font-size: 14px;
+  line-height: 21px;
+  color: #333333;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+%button {
+  margin: 0 auto;
+  padding: 0;
+  background-color: $blue;
+  color: $white;
+  text-align: center;
+  border: none;
+}

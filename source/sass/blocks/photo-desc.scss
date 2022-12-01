@@ -1,0 +1,16 @@
+.photo-desc {
+  margin: 0;
+}
+
+.photo-desc__title,
+.photo-desc__autor,
+.photo-desc__likes {
+  @extend %font-desc;
+  margin: 0;
+  padding: 0;
+  text-align: start;
+}
+
+.photo-desc__autor {
+  text-transform: none;
+}

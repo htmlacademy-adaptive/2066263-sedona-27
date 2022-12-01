@@ -1,1 +1,35 @@
-// Начните писать стили здесь
+
+@import "../sass/global/variables.scss";
+@import "../sass/global/fonts.scss";
+@import "../sass/global/mixins.scss";
+@import "../sass/blocks/body.scss";
+@import "../sass/blocks/content.scss";
+@import "../sass/blocks/visually-hidden.scss";
+@import "../sass/blocks/welcome.scss";
+@import "../sass/blocks/page-nav.scss";
+@import "../sass/blocks/nav-list.scss";
+@import "../sass/blocks/nav-items.scss";
+@import "../sass/blocks/index-lead.scss";
+@import "../sass/blocks/advantages.scss";
+@import "../sass/blocks/advantages-city.scss";
+@import "../sass/blocks/button.scss";
+@import "../sass/blocks/logo.scss";
+@import "../sass/blocks/area.scss";
+@import "../sass/blocks/search-hotel.scss";
+@import "../sass/blocks/page-header.scss";
+@import "../sass/blocks/intro.scss";
+@import "../sass/blocks/photo-desc.scss";
+@import "../sass/blocks/main-catalog.scss";
+@import "../sass/blocks/catalog-video.scss";
+@import "../sass/blocks/form.scss";
+@import "../sass/blocks/form-welcome.scss";
+@import "../sass/blocks/user-data.scss";
+@import "../sass/blocks/request.scss";
+@import "../sass/blocks/list-radio.scss";
+@import "../sass/blocks/sights-checkbox.scss";
+@import "../sass/blocks/user-comment.scss";
+@import "../sass/blocks/page-footer.scss";
+@import "../sass/blocks/social.scss";
+@import "../sass/blocks/copyright.scss";
+@import "../sass/blocks/modal-failure.scss";
+@import "../sass/blocks/modal-success.scss";

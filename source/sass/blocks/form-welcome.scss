@@ -1,0 +1,10 @@
+.form-welcome {
+  margin: 0 20px;
+  padding: 0;
+  border: none;
+}
+
+.form-welcome__title {
+  @extend %font-title;
+  font-weight: 700;
+}
