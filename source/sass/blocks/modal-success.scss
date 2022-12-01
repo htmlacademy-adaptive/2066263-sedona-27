@@ -1,0 +1,15 @@
+.modal-success {
+  margin: 39px 37px 20px;
+}
+
+.modal-success__title {
+  @extend %font-title;
+}
+
+.modal-success__desc {
+  @extend %font-desc;
+}
+
+.modal-success__button {
+  @extend %button;
+}

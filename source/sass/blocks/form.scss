@@ -1,0 +1,13 @@
+.form {
+  box-sizing: border-box;
+  padding: 0 20px;
+}
+
+.form__button {
+  margin: 0 auto;
+  padding: 0;
+  background-color: $blue;
+  color: $white;
+  text-align: center;
+  border: none;
+}

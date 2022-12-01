@@ -1,0 +1,10 @@
+.page-footer {
+  margin: 0 20px;
+}
+
+.page-footer__hashtag {
+  @extend %font-title;
+  font-weight: 700;
+  text-decoration: none;
+  display: block;
+}

@@ -1,0 +1,15 @@
+.request {
+  border: none;
+}
+
+
+.request__title {
+  @extend %font-title;
+  font-weight: 700;
+}
+
+.request__label {
+  @extend %font-desc;
+  font-weight: 700;
+  text-transform: none;
+}

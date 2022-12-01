@@ -1,0 +1,15 @@
+.modal-failure {
+  margin: 45px 42px 35px;
+}
+
+.modal-failure__title {
+  @extend %font-title;
+}
+
+.modal-failure__desc {
+  @extend %font-desc;
+}
+
+.modal-failure__button {
+  @extend %button;
+}

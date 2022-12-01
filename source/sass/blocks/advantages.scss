@@ -1,0 +1,36 @@
+.advantages {
+  @extend %list;
+
+  &__title {
+    @extend %font-title;
+
+    &--image {
+      color: $white;
+    }
+  }
+
+  &__order {
+    @extend %font-desc;
+
+    &--image {
+      color: $white;
+    }
+  }
+
+  &__description {
+    @extend %font-desc;
+
+    &--image {
+      color: $white;
+    }
+  }
+
+  &__text--image {
+    background-color: $blue;
+  }
+
+  .advantages__text {
+    padding: 20px;
+    box-sizing: border-box;
+  }
+}

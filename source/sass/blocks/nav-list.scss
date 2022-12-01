@@ -1,0 +1,15 @@
+.nav-list {
+  @extend %list;
+  background-color: $blue;
+}
+
+.nav-list__item {
+  @extend %font-title;
+  font-weight: bold;
+}
+
+.nav-list__link {
+  appearance: none;
+  text-decoration: none;
+  color: $white;
+}

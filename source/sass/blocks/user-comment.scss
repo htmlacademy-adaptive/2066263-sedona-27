@@ -1,0 +1,21 @@
+.user-comment {
+  border: none;
+}
+
+.user-comment__title {
+  @extend %font-title;
+  font-weight: 700;
+}
+
+.user-comment__comment {
+  resize: none;
+  display: block;
+  width: 100%;
+}
+
+.user-comment__comment::placeholder {
+  @extend %font-title;
+  text-transform: none;
+  font-weight: 700;
+  text-align: start;
+}

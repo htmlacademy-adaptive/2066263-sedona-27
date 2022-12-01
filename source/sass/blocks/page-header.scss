@@ -1,0 +1,15 @@
+.page-header {
+  background-image: url("../img/img-catalog/postcard-mobile@1x.jpg");
+  background-repeat: no-repeat;
+  background-color: $blue;
+  background-position-y: bottom;
+
+  &--index {
+    background-image: none;
+  }
+}
+
+.page-header__image {
+  padding: 52px 1px 67px 1px;
+  width: 100%;
+}

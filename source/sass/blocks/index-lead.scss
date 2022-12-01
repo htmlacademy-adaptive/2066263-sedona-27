@@ -1,0 +1,12 @@
+.index-lead {
+  padding: 37px 18px;
+  box-sizing: border-box;
+
+  &__title {
+    @extend %font-title;
+  }
+
+  &__desc {
+    @extend %font-desc;
+  }
+}

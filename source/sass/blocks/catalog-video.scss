@@ -1,0 +1,9 @@
+.catalog-video__title {
+  @extend %font-title;
+  padding: 0 7px;
+}
+
+.catalog-video__desc {
+  @extend %font-desc;
+  padding: 0 7px;
+}

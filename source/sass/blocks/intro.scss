@@ -1,0 +1,12 @@
+.intro {
+  margin: 0;
+  padding: 0;
+}
+
+.intro__title {
+  @extend %font-title;
+}
+
+.intro__desc {
+  @extend %font-desc;
+}

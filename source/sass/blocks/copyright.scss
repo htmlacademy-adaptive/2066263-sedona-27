@@ -1,0 +1,12 @@
+.copyright {
+  text-align: center;
+}
+
+.copyright__text {
+  @extend %font-desc;
+  text-decoration: none;
+}
+
+.copyright__icon {
+  display: inline;
+}
