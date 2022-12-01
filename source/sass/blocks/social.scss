@@ -6,7 +6,10 @@
 
 .social__item {
   display: inline;
-  padding: 10px 20px;
   margin: 5px;
+}
+
+.social__link {
+  padding: 10px 20px;
   background-color: $blue;
 }

@@ -8,8 +8,11 @@
 }
 
 .user-comment__comment {
+  @extend %font-title;
+  font-weight: 700;
+  text-transform: none;
+  text-align: start;
   resize: none;
-  display: block;
   width: 100%;
 }
 
@@ -18,4 +21,5 @@
   text-transform: none;
   font-weight: 700;
   text-align: start;
+  opacity: 30%;
 }
