@@ -1,5 +1,11 @@
 .page-footer {
   margin: 0 20px;
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+    justify-content: space-around;
+    align-items: baseline;
+  }
 }
 
 .page-footer__hashtag {

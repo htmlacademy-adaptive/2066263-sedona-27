@@ -4,4 +4,14 @@
 
 .page-nav--nojs {
   margin-top: 96px;
+
+  @media (min-width: $tablet-width) {
+    margin: 18px 0;
+  }
+}
+
+.page-nav__toggle {
+  @media (min-width: $tablet-width) {
+    display: none;
+  }
 }

@@ -1,11 +1,42 @@
 .advantages {
   @extend %list;
 
+  @media (min-width: $tablet-width) {
+    // display: grid;
+  }
+
   &__title {
     @extend %font-title;
 
     &--image {
       color: $white;
+    }
+  }
+
+  &__item {
+    // grid-area: item;
+
+    &--city {
+      grid-area: city;
+    }
+
+    &--image {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+    }
+
+    &--area {
+      background-color: hsl(0, 0%, 93%);
+      padding: 0;
+      margin: 0;
+      grid-area: area;
+
+      @media (min-width: $tablet-width) {
+        display: inline-block;
+        margin: 0;
+        padding: 0;
+        width: 32%;
+      }
     }
   }
 

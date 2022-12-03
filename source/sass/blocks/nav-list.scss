@@ -1,15 +1,36 @@
 .nav-list {
   @extend %list;
   background-color: $blue;
+
+  @media (min-width: $tablet-width) {
+    background-color: $white;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+  }
 }
+
+.nav-list li:nth-child(3) {
+  @media (min-width: $tablet-width) {
+    grid-column: 4/5;
+  }
+}
+
 
 .nav-list__item {
   @extend %font-title;
   font-weight: bold;
+
+  @media (min-width: $tablet-width) {
+    display: inline;
+  }
 }
 
 .nav-list__link {
   appearance: none;
   text-decoration: none;
   color: $white;
+
+  @media (min-width: $tablet-width) {
+    color: $black;
+  }
 }

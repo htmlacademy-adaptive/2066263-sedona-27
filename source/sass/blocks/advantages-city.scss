@@ -1,4 +1,8 @@
 .advantages-city {
   @extend %list;
   padding: 20px;
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+  }
 }
