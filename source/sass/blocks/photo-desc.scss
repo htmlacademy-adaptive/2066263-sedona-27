@@ -1,5 +1,9 @@
 .photo-desc {
   margin: 0;
+
+  @media (min-width: $tablet-width) {
+    background-color: #f2f2f2;
+  }
 }
 
 .photo-desc__title,

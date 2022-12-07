@@ -15,12 +15,6 @@
   }
 }
 
-.photo-desc {
-  @media (min-width: $tablet-width) {
-    background-color: #f2f2f2;
-  }
-}
-
 .gallery__iteme:nth-of-type(3) section {
   @media (min-width: $tablet-width) {
     background-color: #eaeaea;
