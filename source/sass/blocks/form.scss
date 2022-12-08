@@ -1,6 +1,14 @@
 .form {
   box-sizing: border-box;
   padding: 0 20px;
+
+  @media (min-width: $tablet-width) {
+    padding: 0 60px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 0 120px;
+  }
 }
 
 .form__button {
@@ -10,4 +18,15 @@
   color: $white;
   text-align: center;
   border: none;
+
+  @media (min-width: $tablet-width) {
+    margin: 0;
+  }
+}
+
+.form__footer {
+  @media (min-width: $tablet-width) {
+    display: flex;
+    justify-content: space-between;
+  }
 }

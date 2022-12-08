@@ -1,15 +1,49 @@
 .nav-list {
   @extend %list;
   background-color: $blue;
+
+  @media (min-width: $tablet-width) {
+    background-color: $white;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+  }
 }
+
+.nav-list__item--decor {
+  @media (min-width: $tablet-width) {
+    grid-column: 4/5;
+  }
+}
+
 
 .nav-list__item {
   @extend %font-title;
   font-weight: bold;
+  padding: 17px 10px 13px 10px;
+  box-shadow: 0 1px 0 rgba(1, 1, 1, 0.2), inset 0 1px 0 rgba(255, 255, 255, 0.2);
+
+
+  @media (min-width: $tablet-width) {
+    display: inline;
+    padding: 18px 10px;
+    box-shadow: none;
+  }
+}
+
+.nav-list__item:last-of-type {
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0) 90%, rgba(0, 0, 0, 0.2) 100%);
+
+  @media (min-width: $tablet-width) {
+    background: none;
+  }
 }
 
 .nav-list__link {
   appearance: none;
   text-decoration: none;
   color: $white;
+
+  @media (min-width: $tablet-width) {
+    color: $black;
+  }
 }

@@ -1,0 +1,12 @@
+.data-wrap {
+  @media (min-width: $tablet-width) {
+    display: grid;
+    grid-template-columns: 280px 280px;
+    gap: 88px;
+  }
+
+  @media (min-width: $desktop-width) {
+    grid-template-columns: 430px 402px;
+    gap: 128px;
+  }
+}

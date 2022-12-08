@@ -1,0 +1,22 @@
+.gallery {
+  @media (min-width: $tablet-width) {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  @media (min-width: $desktop-width) {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+.gallery article:first-child {
+  @media (min-width: $tablet-width) {
+    grid-column: 1/-1;
+  }
+}
+
+.gallery__iteme:nth-of-type(3) section {
+  @media (min-width: $tablet-width) {
+    background-color: #eaeaea;
+  }
+}

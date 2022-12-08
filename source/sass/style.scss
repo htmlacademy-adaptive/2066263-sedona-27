@@ -1,5 +1,5 @@
-
 @import "../sass/global/variables.scss";
+@import "../sass/global/viewports.scss";
 @import "../sass/global/fonts.scss";
 @import "../sass/global/mixins.scss";
 @import "../sass/blocks/body.scss";
@@ -8,14 +8,13 @@
 @import "../sass/blocks/welcome.scss";
 @import "../sass/blocks/page-nav.scss";
 @import "../sass/blocks/nav-list.scss";
-@import "../sass/blocks/nav-items.scss";
 @import "../sass/blocks/index-lead.scss";
 @import "../sass/blocks/advantages.scss";
 @import "../sass/blocks/advantages-city.scss";
 @import "../sass/blocks/button.scss";
 @import "../sass/blocks/logo.scss";
-@import "../sass/blocks/area.scss";
 @import "../sass/blocks/search-hotel.scss";
+@import "../sass/blocks/gallery.scss";
 @import "../sass/blocks/page-header.scss";
 @import "../sass/blocks/intro.scss";
 @import "../sass/blocks/photo-desc.scss";
@@ -33,3 +32,5 @@
 @import "../sass/blocks/copyright.scss";
 @import "../sass/blocks/modal-failure.scss";
 @import "../sass/blocks/modal-success.scss";
+@import "../sass/blocks/data-wrap.scss";
+@import "../sass/blocks/catalog-photo.scss";
