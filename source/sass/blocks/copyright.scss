@@ -1,12 +1,16 @@
 .copyright {
-  text-align: center;
+  padding: 12px;
 }
 
 .copyright__text {
   @extend %font-desc;
   text-decoration: none;
+  display: flex;
+  column-gap: 12px;
+  justify-content: center;
+  align-items: center;
 }
 
 .copyright__icon {
-  display: inline;
+  display: inline-block;
 }

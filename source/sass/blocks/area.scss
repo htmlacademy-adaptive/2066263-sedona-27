@@ -1,5 +1,18 @@
 .area {
   background-color: hsl(0, 0%, 93%);
-  padding: 0;
+  padding: 24px 34px 26px 34px;
+  margin: 0;
+  position: relative;
+}
+
+.area__title {
+  margin: 0;
+}
+
+.area__order {
+  margin-bottom: 14px;
+}
+
+.area__description {
   margin: 0;
 }

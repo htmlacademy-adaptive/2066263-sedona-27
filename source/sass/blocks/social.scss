@@ -1,15 +1,26 @@
 .social {
   text-align: center;
-  padding: 0;
   display: block;
 }
 
 .social__item {
   display: inline;
-  margin: 5px;
 }
 
 .social__link {
-  padding: 10px 20px;
+  padding: 14px 24px;
   background-color: $blue;
+  margin: 4px;
+  position: relative;
+}
+
+.social__link::after {
+  content: "";
+  background-image: url("./img/academy.svg");
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  top: 50%;
+  left: 50%;
+  z-index: 2;
 }
