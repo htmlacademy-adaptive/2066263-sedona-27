@@ -3,6 +3,10 @@
   padding: 12px 20px;
   margin-bottom: 20px;
 
+  @media (min-width: $tablet-width) {
+    display: flex;
+  }
+
   &__item {
     text-align: start;
     display: flex;

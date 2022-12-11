@@ -1,12 +1,24 @@
 .page-footer {
   margin: 0;
   padding: 40px 20px;
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    padding: 0 60px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 0 120px;
+  }
 }
 
 .page-footer__hashtag {
   @extend %font-title;
   font-size: 21px;
   font-weight: 700;
+  width: 166px;
   text-decoration: none;
   display: block;
 }

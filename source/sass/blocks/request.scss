@@ -13,3 +13,16 @@
   font-weight: 700;
   text-transform: none;
 }
+
+.request__data {
+  @media (min-width: $tablet-width) {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  @media (min-width: $desktop-width) {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+}

@@ -4,6 +4,10 @@
   background-color: $blue;
   background-position-y: bottom;
 
+  @media (min-width: $tablet-width) {
+    background-size: cover;
+  }
+
   &--index {
     background-image: none;
   }
