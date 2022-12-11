@@ -6,10 +6,19 @@
 .nav-list__item {
   @extend %font-title;
   font-weight: bold;
+  border-bottom: 1px  rgba(1, 1, 1, 0.2) solid;
+  box-shadow: 0 1px 0 rgba(255, 255, 255, 0.2), inset 0 1px 0 rgba(255, 255, 255, 0.2);
+  box-sizing: border-box;
+}
+
+.nav-list li:last-of-type {
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0) 85%, rgba(0, 0, 0, 0.2) 100%);
 }
 
 .nav-list__link {
   appearance: none;
   text-decoration: none;
   color: $white;
+  display: block;
+  padding: 17px 30px 11px 30px;
 }
