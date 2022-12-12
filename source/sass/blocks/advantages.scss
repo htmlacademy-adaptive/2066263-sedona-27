@@ -15,6 +15,10 @@
       margin: 0 auto 14px auto;
     }
 
+    @media (min-width: $desktop-width) {
+      width: 50%;
+    }
+
     &--image {
       color: $white;
     }
@@ -41,11 +45,19 @@
         grid-row: 4/5;
         padding: 30px 1px 40px 1px;
       }
+
+      @media (min-width: $desktop-width) {
+        padding: 54px 1px 40px 1px;
+      }
     }
 
     &--road {
       @media (min-width: $tablet-width) {
         padding: 18px 16px 40px 16px;
+      }
+
+      @media (min-width: $desktop-width) {
+        padding: 44px 16px 40px 16px;
       }
     }
   }
@@ -82,6 +94,10 @@
       margin-bottom: 24px;
     }
 
+    @media (min-width: $desktop-width) {
+      margin-bottom: 22px;
+    }
+
     &--image {
       color: $white;
     }
@@ -96,6 +112,14 @@
 
     &--image {
       color: $white;
+    }
+
+    &--bridge {
+      @media (min-width: $desktop-width) {
+        width: 230px;
+        text-align: center;
+        margin: 0 auto;
+      }
     }
   }
 
@@ -112,12 +136,20 @@
     padding: 26px 32px 4px 32px;
   }
 
+  @media (min-width: $desktop-width) {
+    padding: 10px 40px 4px 40px;
+  }
+
   &--bridge {
     grid-column: 3/-1;
     grid-row: 1/-1;
 
     @media (min-width: $tablet-width) {
       padding: 30px 32px 4px 32px;
+    }
+
+    @media (min-width: $desktop-width) {
+      padding: 6px 32px 4px 32px;
     }
   }
 }

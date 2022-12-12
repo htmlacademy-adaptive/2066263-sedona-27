@@ -8,6 +8,11 @@
     margin-bottom: 12px;
   }
 
+  @media (min-width: $desktop-width) {
+    padding: 31px 294px;
+    margin-bottom: 0;
+  }
+
   &__title {
     @extend %font-title;
     margin-bottom: 35px;
