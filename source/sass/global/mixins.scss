@@ -36,3 +36,13 @@ img {
   height: auto;
   display: block;
 }
+
+br {
+  @media (min-width: $mobile-width-only) {
+    display: none;
+  }
+
+  @media (min-width: $tablet-width) {
+    display: inline;
+  }
+}

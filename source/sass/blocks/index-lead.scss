@@ -3,9 +3,19 @@
   box-sizing: border-box;
   margin-bottom: 22px;
 
+  @media (min-width: $tablet-width) {
+    padding: 31px 84px;
+    margin-bottom: 12px;
+  }
+
   &__title {
     @extend %font-title;
     margin-bottom: 35px;
+
+    @media (min-width: $tablet-width) {
+      font-size: 21px;
+      margin-bottom: 28px;
+    }
   }
 
   &__desc {

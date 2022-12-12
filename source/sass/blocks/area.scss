@@ -1,9 +1,18 @@
 .area__title {
   margin: 0;
+
+  @media (min-width: $tablet-width) {
+    width: 80%;
+    margin: 0 auto 12px auto;
+  }
 }
 
 .area__order {
   margin-bottom: 14px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 24px;
+  }
 }
 
 .area__description {

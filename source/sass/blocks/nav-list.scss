@@ -24,6 +24,8 @@
   box-sizing: border-box;
 
   @media (min-width: $tablet-width) {
+    font-size: 14px;
+    line-height: 21px;
     border-bottom: none;
     box-shadow: none;
   }
@@ -46,5 +48,6 @@
 
   @media (min-width: $tablet-width) {
     color: $black;
+    padding: 20px 10px 14px 10px;
   }
 }

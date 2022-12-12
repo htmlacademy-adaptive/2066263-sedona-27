@@ -5,6 +5,8 @@
 
   @media (min-width: $tablet-width) {
     display: flex;
+    padding: 14px 0;
+    margin-bottom: 0;
   }
 
   &__item {
@@ -12,36 +14,82 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: start;
-    padding: 4px 0 0 44px;
+    padding: 4px 0 44px 0;
     position: relative;
+
+    @media (min-width: $tablet-width) {
+      text-align: center;
+      padding: 144px 40px 44px 40px;
+    }
+
+    &--food {
+      @media (min-width: $tablet-width) {
+        padding: 140px 40px 44px 40px;
+      }
+    }
+
+    &--gift {
+      @media (min-width: $tablet-width) {
+        padding: 138px 40px 44px 40px;
+      }
+    }
 
     &::before {
       content: "";
       background-image: url("../img/icons/burger.svg");
       background-repeat: no-repeat;
+      background-size: cover;
       position: absolute;
       width: 50px;
       height: 50px;
       top: 10px;
       left: -4px;
       z-index: 2;
+
+      @media (min-width: $tablet-width) {
+        width: 76px;
+        height: 74px;
+        top: 44px;
+        left: 50%;
+        transform: translateX(-50%);
+      }
     }
   }
 
   .advantages-city__item--house::before {
     background-image: url("../img/icons/house.svg");
+
+    @media (min-width: $tablet-width) {
+      width: 78px;
+    }
   }
 
   .advantages-city__item--gift::before {
     background-image: url("../img/icons/gift.svg");
     left: 0;
+
+    @media (min-width: $tablet-width) {
+      top: 48px;
+      width: 66px;
+      height: 79px;
+      left: 50%;
+      transform: translateX(-50%);
+    }
   }
 
   &__title {
     margin-bottom: 2px;
+
+    @media (min-width: $tablet-width) {
+      margin-bottom: 22px;
+    }
   }
 
   &__description {
     text-align: start;
+
+    @media (min-width: $tablet-width) {
+      text-align: center;
+    }
   }
 }
