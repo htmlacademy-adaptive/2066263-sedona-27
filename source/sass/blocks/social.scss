@@ -5,6 +5,7 @@
 
 .social__item {
   display: inline;
+  cursor: default;
 }
 
 .social__link {
@@ -12,15 +13,37 @@
   background-color: $blue;
   margin: 4px;
   position: relative;
+
+  &:hover,
+  &:focus,
+  &:focus-visible {
+    background-color: #669ec0;
+    outline: none;
+  }
+
+  &:default,
+  &:disabled,
+  &:visited {
+    opacity: 0.3;
+  }
 }
 
 .social__link::after {
   content: "";
-  background-image: url("./img/academy.svg");
+  background-image: url("../img/icons/telegram.svg");
   position: absolute;
-  width: 20px;
+  width: 24px;
   height: 20px;
-  top: 50%;
+  top: 12px;
   left: 50%;
+  transform: translateX(-50%);
   z-index: 2;
+}
+
+.social__link--vk::after {
+  background-image: url("../img/icons/vk.svg");
+}
+
+.social__link--youtube::after {
+  background-image: url("../img/icons/youtube.svg");
 }

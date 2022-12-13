@@ -22,6 +22,20 @@
   text-decoration: none;
   display: block;
   margin: 0 auto;
+  outline: none;
+
+  &:hover,
+  &:focus,
+  &:focus-visible {
+    color: #81b3d2;
+    outline: none;
+  }
+
+  &:default,
+  &:disabled,
+  &:visited {
+    opacity: 0.3;
+  }
 
   @media (min-width: $tablet-width) {
     margin: 0;
@@ -31,6 +45,10 @@
     flex: none;
     appearance: none;
     justify-content: start;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 6px;
   }
 }
 

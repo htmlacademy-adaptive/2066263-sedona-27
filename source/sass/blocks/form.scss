@@ -1,6 +1,7 @@
 .form {
   box-sizing: border-box;
   padding: 0 20px;
+  margin-bottom: 18px;
 
   @media (min-width: $tablet-width) {
     padding: 0 60px;
@@ -12,16 +13,24 @@
 }
 
 .form__button {
-  margin: 0 auto;
-  padding: 0;
+  margin: 0 auto 0 auto;
+  padding: 16px 0 16px 0;
+  width: 100%;
   background-color: $blue;
+  font-size: 21px;
   color: $white;
   text-align: center;
   border: none;
+  cursor: pointer;
 
   @media (min-width: $tablet-width) {
     margin: 0;
   }
+}
+
+.form__legend {
+  text-transform: uppercase;
+  padding-left: 44%;
 }
 
 .form__footer {

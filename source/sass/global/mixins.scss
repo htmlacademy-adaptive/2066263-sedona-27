@@ -38,11 +38,10 @@ img {
 }
 
 br {
-  @media (min-width: $mobile-width-only) {
-    display: none;
-  }
+  display: none;
 
   @media (min-width: $tablet-width) {
     display: inline;
   }
 }
+

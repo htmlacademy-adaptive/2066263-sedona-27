@@ -1,15 +1,25 @@
 .modal-success {
-  margin: 39px 37px 20px;
+  padding: 24px 0 0;
+  box-shadow: 0 7px 15px rgba(0, 1, 1, 0.15);
 }
 
 .modal-success__title {
   @extend %font-title;
+  margin-bottom: 26px;
 }
 
 .modal-success__desc {
   @extend %font-desc;
+  padding: 0 40px 0 40px;
+  margin-bottom: 50px;
 }
 
 .modal-success__button {
   @extend %button;
+  font-size: 18px;
+  padding: 18px 76px 14px;
+  box-sizing: border-box;
+  border: 20px #f2f2f2 solid;
+  margin: 0;
+  width: 100%;
 }

@@ -1,7 +1,7 @@
 .advantages-city {
   @extend %list;
   padding: 14px 20px;
-  margin-bottom: 20px;
+  margin-bottom: 16px;
 
   @media (min-width: $tablet-width) {
     display: flex;
@@ -19,7 +19,7 @@
     flex-wrap: wrap;
     justify-content: start;
     min-width: 0;
-    padding: 4px 0 44px 0;
+    padding: 6px 0 0 46px;
     position: relative;
 
     @media (min-width: $tablet-width) {
@@ -43,6 +43,8 @@
     }
 
     &--gift {
+      padding: 4px 0 0 47px;
+
       @media (min-width: $tablet-width) {
         padding: 138px 40px 44px 40px;
       }
@@ -60,8 +62,8 @@
       background-repeat: no-repeat;
       background-size: cover;
       position: absolute;
-      width: 50px;
-      height: 50px;
+      width: 42px;
+      height: 42px;
       top: 10px;
       left: -4px;
       z-index: 2;
@@ -82,14 +84,19 @@
 
   .advantages-city__item--house::before {
     background-image: url("../img/icons/house.svg");
+    width: 44px;
+    height: 44px;
 
     @media (min-width: $tablet-width) {
       width: 78px;
+      height: 74px;
     }
   }
 
   .advantages-city__item--gift::before {
     background-image: url("../img/icons/gift.svg");
+    width: 34px;
+    height: 40px;
     left: 0;
 
     @media (min-width: $tablet-width) {

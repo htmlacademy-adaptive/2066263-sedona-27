@@ -1,10 +1,13 @@
 .user-comment {
   border: none;
+  padding: 0;
+  margin-bottom: 66px;
 }
 
 .user-comment__title {
   @extend %font-title;
   font-weight: 700;
+  margin: 0 0 16px 0;
 }
 
 .user-comment__comment {
@@ -14,6 +17,10 @@
   text-align: start;
   resize: none;
   width: 100%;
+  border: none;
+  padding: 18px 10px 16px 14px;
+  box-sizing: border-box;
+  background-color: #f2f2f2;
 }
 
 .user-comment__comment::placeholder {

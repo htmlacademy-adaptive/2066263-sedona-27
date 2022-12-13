@@ -1,17 +1,21 @@
 .request {
   border: none;
+  margin-bottom: 14px;
 }
-
 
 .request__title {
   @extend %font-title;
   font-weight: 700;
+  margin: 0 0 24px 0;
 }
 
 .request__label {
-  @extend %font-desc;
+  @extend %font-title;
   font-weight: 700;
+  display: block;
   text-transform: none;
+  text-align: start;
+  margin: 0 0 36px 50px;
 }
 
 .request__data {
