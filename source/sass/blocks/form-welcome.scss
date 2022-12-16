@@ -5,11 +5,16 @@
 
   @media (min-width: $tablet-width) {
     margin: 0;
+    margin-bottom: 48px;
   }
 }
 
 .form-welcome:nth-of-type(2) {
   margin: 0 0 44px 0;
+
+  @media (min-width: $tablet-width) {
+    margin: 0;
+  }
 }
 
 .form-welcome__title {
@@ -17,4 +22,13 @@
   font-weight: 700;
   margin: 0 0 4px 0;
   padding: 0;
+
+  @media (min-width: $tablet-width) {
+    font-size: 21px;
+    margin: 0 0 12px 20px;
+  }
+}
+
+.form-welcome:nth-child(2) .form-welcome__title {
+  margin: 0 0 12px -20px;
 }

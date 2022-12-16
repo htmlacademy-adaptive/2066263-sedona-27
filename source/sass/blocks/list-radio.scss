@@ -1,3 +1,31 @@
 .list-radio {
   @extend %list;
 }
+
+.list-radio__icon {
+  position: absolute;
+  width: 46px;
+  height: 46px;
+  border-radius: 50%;
+  margin-left: -16px;
+  margin-top: -10px;
+  background-color: #f2f2f2;
+  box-sizing: border-box;
+
+  .list-radio__input[type="radio"]:active {
+    opacity: 0.3;
+  }
+}
+
+.list-radio__input[type="radio"]:checked + .list-radio__icon {
+  background-image: url("../img/icons/circle.svg");
+  background-size: 30% 30%;
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+}
+
+.list-radio__input[type="radio"] {
+  &:focus + .list-radio__icon {
+    border-color: #bababa;
+  }
+}

@@ -1,6 +1,10 @@
 .copyright {
   text-align: center;
   padding: 12px;
+
+  @media (min-width: $tablet-width) {
+    padding: 0;
+  }
 }
 
 .copyright__text {

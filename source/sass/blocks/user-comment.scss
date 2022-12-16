@@ -2,12 +2,21 @@
   border: none;
   padding: 0;
   margin-bottom: 66px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 44px;
+  }
 }
 
 .user-comment__title {
   @extend %font-title;
   font-weight: 700;
   margin: 0 0 16px 0;
+
+  @media (min-width: $tablet-width) {
+    font-size: 21px;
+    margin: 0 0 26px 0;
+  }
 }
 
 .user-comment__comment {
@@ -21,6 +30,10 @@
   padding: 18px 10px 16px 14px;
   box-sizing: border-box;
   background-color: #f2f2f2;
+
+  @media (min-width: $tablet-width) {
+    height: 160px;
+  }
 }
 
 .user-comment__comment::placeholder {

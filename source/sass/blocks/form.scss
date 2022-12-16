@@ -1,10 +1,11 @@
 .form {
   box-sizing: border-box;
   padding: 0 20px;
-  margin-bottom: 18px;
+  margin-bottom: 38px;
 
   @media (min-width: $tablet-width) {
     padding: 0 60px;
+    margin-bottom: 52px;
   }
 
   @media (min-width: $desktop-width) {
@@ -25,17 +26,27 @@
 
   @media (min-width: $tablet-width) {
     margin: 0;
+    width: 50%;
   }
 }
 
 .form__legend {
   text-transform: uppercase;
   padding-left: 44%;
+
+  @media (min-width: $tablet-width) {
+    font-size: 14px;
+    padding-left: 18px;
+    justify-self: end;
+    align-self: center;
+    margin-top: 8px;
+  }
 }
 
 .form__footer {
   @media (min-width: $tablet-width) {
     display: flex;
     justify-content: space-between;
+    flex: 0 0 50%;
   }
 }

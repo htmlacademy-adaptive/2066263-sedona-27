@@ -7,6 +7,7 @@
     <link rel="preload" href="fonts/ptsans.woff2" as="font">
     <link rel="preload" href="fonts/ptsansbold.woff2" as="font">
     <link rel="stylesheet" href="css/style.css">
+    <script src="js/script.js" defer></script>
 </head>
   <body class="body">
     <div class="content">
@@ -14,22 +15,24 @@
         <a class="logo" href="#" aria-current="page">
           <img class="logo__image" src="img/logo-sedona.svg" width="185" height="96" loading="lazy" alt="Логотип города Седона.">
         </a>
-        <nav class="page-nav page-nav--nojs">
-          <ul class="nav-list">
+        <nav class="page-nav page-nav--closed">
+          <ul class="nav-list page-nav__list">
             <li class="nav-list__item"><a class="nav-list__link"  href="index.html">Главная</a></li>
             <li class="nav-list__item"><a class="nav-list__link"  href="gallery.html">Фото и видео</a></li>
-            <li class="nav-list__item nav-list__item--decor nav-list__link--current"><a class="nav-list__link" href="form.html">Форма Отзыва</a></li>
+            <li class="nav-list__item nav-list__item--decor"><a class="nav-list__link  nav-list__link--current" href="form.html">Форма Отзыва</a></li>
             <li class="nav-list__item"><a class="nav-list__link" href="https://htmlacademy.ru">HTML ACADEMY</a></li>
           </ul>
           <button class="page-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span>
           </button>
         </nav>
-        <img class="page-header__image" src="img/letters-sedona.svg" width="229" height="39" alt="Добро пожаловать в Седону!">
+        <picture class="page-header__wrap">
+          <img class="page-header__image" src="img/letters-sedona.svg" width="229" height="39" alt="Добро пожаловать в Седону!">
+        </picture>
       </header>
       <form class="form" method="post" action="https://echo.htmlacademy.ru/">
-        <section class="intro">
-          <h1 class="intro__title">Оставьте свой отзыв</h1>
-          <p class="intro__desc">Помогите нашим отелям стать лучше! оставьте отзыв о них, а также о посещенных вами достопримечательностях</p>
+        <section class="intro intro--form">
+          <h1 class="intro__title intro__title--form">Оставьте свой отзыв</h1>
+          <p class="intro__desc intro__desc--form">Помогите нашим отелям стать лучше! оставьте отзыв о них, а также о посещенных вами достопримечательностях</p>
         </section>
         <aside class="data-wrap">
           <fieldset class="form-welcome">
@@ -51,11 +54,11 @@
             <legend class="form-welcome__title">контактная информация:</legend>
               <p class="user-data">
                 <label class="user-data__label" for="phone">контактный телефон*:</label>
-                <input class="user-data__input-user input-icon input-icon-phone" type="tel" id="phone" name="phone" placeholder="Введите телефон" required>
+                <input class="user-data__input-user user-data__icon user-data__icon--phone" type="tel" id="phone" name="phone" placeholder="Введите телефон" required>
               </p>
               <p class="user-data">
                 <label class="user-data__label" for="email">электронная почта*:</label>
-                <input class="user-data__input-user input-icon input-icon-email" type="email" id="email" name="email" placeholder="Введите e-mail" required>
+                <input class="user-data__input-user user-data__icon user-data__icon--email" type="email" id="email" name="email" placeholder="Введите e-mail" required>
               </p>
           </fieldset>
         </aside>
@@ -97,14 +100,14 @@
             </li>
             <li class="sights-checkbox__item">
               <label class="contorl checkbox">
-                <input class="sights-checkbox__input visually-hidden" type="checkbox" value="Гора-Колокол">
+                <input class="sights-checkbox__input visually-hidden" type="checkbox" value="Гора-Колокол" checked>
                 <span class="sights-checkbox__icon-checkbox"></span>
                 <span class="request__label">Гора-Колокол</span>
               </label>
             </li>
             <li class="sights-checkbox__item">
               <label class="contorl checkbox">
-                <input class="sights-checkbox__input visually-hidden" type="checkbox" value="Слайд-парк">
+                <input class="sights-checkbox__input visually-hidden" type="checkbox" value="Слайд-парк" checked>
                 <span class="sights-checkbox__icon-checkbox"></span>
                 <span class="request__label">Слайд-парк</span>
               </label>
