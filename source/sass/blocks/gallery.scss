@@ -39,16 +39,6 @@
   }
 }
 
-.gallery__photo--large {
-  @media (min-width: $tablet-width) {
-    height: 400px;
-  }
-}
-
-.gallery__photo--middle {
-  height: 267px;
-}
-
 .gallery__item:last-of-type::after {
   content: "";
   position: absolute;

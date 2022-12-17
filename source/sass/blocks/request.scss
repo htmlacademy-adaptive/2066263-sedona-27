@@ -35,12 +35,20 @@
   content: "";
   position: absolute;
   top: 50%;
-  left: -25%;
-  // transform: translateX(50%);
-  width: 585px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 280px;
   z-index: -1;
   height: 1px;
   background-color: #dbdbdb;
+
+  @media (min-width: $tablet-width) {
+    width: 648px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 960px;
+  }
 }
 
 .request__label {

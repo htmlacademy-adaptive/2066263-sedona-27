@@ -7,3 +7,15 @@
     margin-bottom: 0;
   }
 }
+
+.catalog-photo--large {
+  @media (min-width: $tablet-width) {
+    height: 400px;
+  }
+}
+
+.catalog-photo--middle {
+  @media (min-width: $tablet-width) {
+    height: 267px;
+  }
+}
