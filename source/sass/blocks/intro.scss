@@ -5,20 +5,26 @@
   @media (min-width: $tablet-width) {
     padding: 66px 40px 0 40px;
   }
+}
 
-  .intro--form {
-    @media (min-width: $tablet-width) {
-      padding: 64px 40px 0 40px;
-    }
+.intro--form {
+  @media (min-width: $tablet-width) {
+    padding: 64px 40px 0 40px;
   }
 
   @media (min-width: $desktop-width) {
-    padding: 94px 0 0 0;
+    padding: 110px 0 0 0;
   }
 }
 
 .intro--form .intro__desc {
   margin-bottom: 50px;
+
+  @media (min-width: $desktop-width) {
+    width: 46%;
+    margin: 0 auto 16px auto;
+    line-height: 24px;
+  }
 }
 
 .intro__title {
@@ -54,5 +60,11 @@
   .intro__desc--form {
     padding: 0 65px 0 65px;
     line-height: 24px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .intro__title--form {
+    margin-bottom: 30px;
   }
 }

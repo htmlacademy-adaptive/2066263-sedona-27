@@ -50,9 +50,11 @@
 }
 
 .catalog-video__content > video {
-  width: 648px;
-  height: 500px;
-  object-fit: inherit;
+  @media (min-width: $tablet-width) {
+    width: 648px;
+    height: 500px;
+    object-fit: inherit;
+  }
 
   @media (min-width: $desktop-width) {
     width: 800px;

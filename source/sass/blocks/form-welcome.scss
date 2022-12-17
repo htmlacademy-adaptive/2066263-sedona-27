@@ -7,6 +7,10 @@
     margin: 0;
     margin-bottom: 48px;
   }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 54px;
+  }
 }
 
 .form-welcome:nth-of-type(2) {
@@ -27,8 +31,16 @@
     font-size: 21px;
     margin: 0 0 12px 20px;
   }
+
+  @media (min-width: $desktop-width) {
+    margin: 0 0 12px 32px;
+  }
 }
 
 .form-welcome:nth-child(2) .form-welcome__title {
   margin: 0 0 12px -20px;
+
+  @media (min-width: $desktop-width) {
+    margin: 0 0 12px -30px;
+  }
 }

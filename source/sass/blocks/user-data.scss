@@ -13,6 +13,10 @@
   @media (min-width: $tablet-width) {
     margin: 0 0 2px 14px;
   }
+
+  @media (min-width: $desktop-width) {
+    margin: 0 0 2px 18px;
+  }
 }
 
 .user-data__input-user {

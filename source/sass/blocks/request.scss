@@ -5,6 +5,10 @@
   @media (min-width: $tablet-width) {
     margin-bottom: 4px;
   }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 30px;
+  }
 }
 
 .request__title {
@@ -19,6 +23,11 @@
     z-index: 2;
     background-color: $white;
     position: relative;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin: 0 0 42px 0;
+    width: 40%;
   }
 }
 
@@ -58,6 +67,8 @@
   @media (min-width: $desktop-width) {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-around;
+    justify-content: space-between;
+    padding: 8px 40px 8px 56px;
+    column-gap: 52px;
   }
 }

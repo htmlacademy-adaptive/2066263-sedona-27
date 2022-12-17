@@ -1,6 +1,11 @@
 .modal-success {
   padding: 24px 0 0;
   box-shadow: 0 7px 15px rgba(0, 1, 1, 0.15);
+  margin: 0 auto;
+
+  @media (min-width: $tablet-width) {
+    width: 640px;
+  }
 }
 
 .modal-success__title {
@@ -22,4 +27,8 @@
   border: 20px #f2f2f2 solid;
   margin: 0;
   width: 100%;
+
+  @media (min-width: $tablet-width) {
+    border-width: 44px 91px;
+  }
 }

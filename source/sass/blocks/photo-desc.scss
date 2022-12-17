@@ -1,6 +1,6 @@
 .photo-desc {
   margin: 0;
-  margin-bottom: 32px;
+  margin-bottom: 52px;
 
   @media (min-width: $tablet-width) {
     margin-bottom: 0;
@@ -60,7 +60,7 @@
     background-image: url("../img/icons/like.svg");
     opacity: 0.3;
     position: absolute;
-    top: 7px;
+    top: 2px;
     left: -4px;
     width: 30px;
     height: 26px;

@@ -2,6 +2,11 @@
   padding: 35px 42px 35px;
   box-sizing: border-box;
   box-shadow: 0 7px 15px rgba(0, 1, 1, 0.15);
+  margin: 0 auto;
+
+  @media (min-width: $tablet-width) {
+    width: 400px;
+  }
 }
 
 .modal-failure__title {
