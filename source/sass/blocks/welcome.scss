@@ -10,10 +10,12 @@
 
   @media (min-width: $tablet-width) {
     padding: 78px 18px 92px 18px;
+    background-image: url("../img/img-index/back-tablet.jpg");
   }
 
   @media (min-width: $desktop-width) {
     margin-bottom: 12px;
+    background-image: url("../img/img-index/back-desktop.jpg");
   }
 }
 

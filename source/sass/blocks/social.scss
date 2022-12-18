@@ -14,16 +14,12 @@
   margin: 4px;
   position: relative;
 
-  &:hover,
-  &:focus,
-  &:focus-visible {
+  &:hover {
     background-color: #669ec0;
     outline: none;
   }
 
-  &:default,
-  &:disabled,
-  &:visited {
+  &:active {
     opacity: 0.3;
   }
 }

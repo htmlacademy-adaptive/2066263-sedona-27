@@ -37,9 +37,11 @@
     background-color: #e5e5e5;
   }
 
+  &:focus,
   &:active {
     background-color: $white;
     outline: 4px solid #e5e5e5;
+    outline-offset: -4px;
   }
 }
 

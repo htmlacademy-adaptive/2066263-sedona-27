@@ -17,17 +17,13 @@
   cursor: pointer;
   outline: none;
 
-  &:hover,
-  &:focus,
-  &:focus-visible {
+  &:hover {
     color: #81b3d2;
     fill: #81b3d2;
     outline: none;
   }
 
-  &:active,
-  &:default,
-  &:disabled {
+  &:active {
     color: #b3b3b3;
     fill: #b3b3b3;
   }

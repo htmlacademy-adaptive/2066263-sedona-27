@@ -15,7 +15,6 @@
   }
 }
 
-
 .nav-list__item {
   @extend %font-title;
   font-weight: bold;
@@ -46,15 +45,12 @@
   display: block;
   padding: 17px 30px 11px 30px;
 
-  &:hover,
-  &:focus {
+  &:hover {
     background-color: #669ec0;
     outline: none;
   }
 
-  &:default,
-  &:disabled,
-  &:visited {
+  &:active {
     opacity: 0.3;
   }
 
@@ -62,10 +58,13 @@
     color: $black;
     padding: 20px 10px 14px 10px;
 
-    &:hover,
-    &:focus {
+    &:hover {
       background-color: $white;
       color: #81b3d2;
+    }
+
+    &:active {
+      opacity: 0.3;
     }
   }
 }

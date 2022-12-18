@@ -9,11 +9,11 @@
   text-decoration: none;
   outline: none;
 
-  &:hover {
+  &:not(:disabled):hover {
     background-color: #669ec0;
   }
 
-  &:focus {
+  &:not(:disabled):active {
     opacity: 0.3;
     outline: none;
   }
