@@ -28,10 +28,11 @@
   border-radius: 4px;
 
   &:hover {
-    border-color: #e5e5e5;
+    background-color: #e5e5e5;
   }
 
   &:active {
+    background-color: #d5d5d5;
     opacity: 0.3;
   }
 
@@ -47,8 +48,10 @@
   background-repeat: no-repeat;
 }
 
-.sights-checkbox__input[type="checkbox"] {
-  &:focus + .sights-checkbox__icon-checkbox {
-    border-color: #bababa;
-  }
+.sights-checkbox__input[type="checkbox"]:hover + .sights-checkbox__icon-checkbox {
+  background-color: #e5e5e5;
+}
+
+.sights-checkbox__input[type="checkbox"]:active + .sights-checkbox__icon-checkbox {
+  background-color: #d5d5d5;
 }
