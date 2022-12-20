@@ -1,15 +1,45 @@
 .social {
   text-align: center;
-  padding: 0;
   display: block;
 }
 
 .social__item {
   display: inline;
-  margin: 5px;
+  cursor: default;
 }
 
 .social__link {
-  padding: 10px 20px;
+  padding: 14px 24px;
   background-color: $blue;
+  margin: 4px;
+  position: relative;
+
+  &:hover {
+    background-color: #669ec0;
+    outline: none;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+}
+
+.social__link::after {
+  content: "";
+  background-image: url("../img/icons/telegram.svg");
+  position: absolute;
+  width: 24px;
+  height: 20px;
+  top: 12px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 2;
+}
+
+.social__link--vk::after {
+  background-image: url("../img/icons/vk.svg");
+}
+
+.social__link--youtube::after {
+  background-image: url("../img/icons/youtube.svg");
 }

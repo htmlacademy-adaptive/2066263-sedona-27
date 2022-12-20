@@ -3,6 +3,7 @@
     display: grid;
     grid-template-columns: 280px 280px;
     gap: 88px;
+    padding-top: 50px;
   }
 
   @media (min-width: $desktop-width) {

@@ -1,9 +1,26 @@
 .index-lead {
-  padding: 37px 18px;
+  padding: 18px 24px;
   box-sizing: border-box;
+  margin-bottom: 22px;
+
+  @media (min-width: $tablet-width) {
+    padding: 31px 84px;
+    margin-bottom: 12px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 31px 294px;
+    margin-bottom: 0;
+  }
 
   &__title {
     @extend %font-title;
+    margin-bottom: 35px;
+
+    @media (min-width: $tablet-width) {
+      font-size: 21px;
+      margin-bottom: 28px;
+    }
   }
 
   &__desc {

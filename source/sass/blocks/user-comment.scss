@@ -1,10 +1,29 @@
 .user-comment {
   border: none;
+  padding: 0;
+  margin-bottom: 66px;
+
+  @media (min-width: $tablet-width) {
+    border-top: 1px solid #dbdbdb;
+    margin-bottom: 44px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 0 98px;
+  }
 }
 
 .user-comment__title {
   @extend %font-title;
   font-weight: 700;
+  margin: 0 0 16px 0;
+
+  @media (min-width: $tablet-width) {
+    font-size: 21px;
+    margin: 0 0 26px 0;
+    padding: 0 50px 0 50px;
+    width: 50%;
+  }
 }
 
 .user-comment__comment {
@@ -14,6 +33,14 @@
   text-align: start;
   resize: none;
   width: 100%;
+  border: none;
+  padding: 18px 10px 16px 14px;
+  box-sizing: border-box;
+  background-color: #f2f2f2;
+
+  @media (min-width: $tablet-width) {
+    height: 160px;
+  }
 }
 
 .user-comment__comment::placeholder {

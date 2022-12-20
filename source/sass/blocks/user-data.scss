@@ -1,5 +1,5 @@
 .user-data {
-  margin: 16px 0;
+  margin: 16px 0 20px 0;
   padding: 0;
 }
 
@@ -8,6 +8,15 @@
   text-align: start;
   font-weight: 700;
   display: block;
+  margin: 0 0 2px 18px;
+
+  @media (min-width: $tablet-width) {
+    margin: 0 0 2px 14px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin: 0 0 2px 18px;
+  }
 }
 
 .user-data__input-user {
@@ -16,8 +25,40 @@
   text-transform: none;
   text-align: start;
   display: block;
+  padding: 13px 50px 13px 16px;
+  box-sizing: border-box;
+  background-color: #f2f2f2;
+  outline: none;
+  border: none;
+  margin: 0;
   width: 100%;
+
+  &:hover {
+    background-color: #e5e5e5;
+  }
+
+  &:focus,
+  &:active {
+    background-color: $white;
+    outline: 4px solid #e5e5e5;
+    outline-offset: -4px;
+  }
 }
+
+.user-data__icon {
+  background-repeat: no-repeat;
+  background-position: right;
+  z-index: 2;
+}
+
+.user-data__icon--phone {
+  background-image: url("../img/icons/phone.svg");
+}
+
+.user-data__icon--email {
+  background-image: url("../img/icons/mail.svg");
+}
+
 
 .user-data__input-user::placeholder {
   @extend %font-title;
@@ -25,4 +66,5 @@
   opacity: 30%;
   text-transform: none;
   font-weight: 700;
+  width: 70%;
 }

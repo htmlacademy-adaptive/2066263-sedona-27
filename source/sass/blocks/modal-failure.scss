@@ -1,15 +1,27 @@
 .modal-failure {
-  margin: 45px 42px 35px;
+  padding: 35px 42px 35px;
+  box-sizing: border-box;
+  box-shadow: 0 7px 15px rgba(0, 1, 1, 0.15);
+  margin: 0 auto;
+
+  @media (min-width: $tablet-width) {
+    width: 400px;
+  }
 }
 
 .modal-failure__title {
   @extend %font-title;
+  margin-bottom: 26px;
 }
 
 .modal-failure__desc {
   @extend %font-desc;
+  margin-bottom: 28px;
 }
 
 .modal-failure__button {
   @extend %button;
+  font-size: 18px;
+  padding: 18px 76px 14px;
+  margin: 0 auto;
 }

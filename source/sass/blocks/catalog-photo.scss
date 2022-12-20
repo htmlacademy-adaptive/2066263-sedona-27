@@ -1,5 +1,21 @@
 .catalog-photo {
+  margin-bottom: 14px;
+
   @media (min-width: $tablet-width) {
+    width: 100%;
     background-size: cover;
+    margin-bottom: 0;
+  }
+}
+
+.catalog-photo--large {
+  @media (min-width: $tablet-width) {
+    height: 400px;
+  }
+}
+
+.catalog-photo--middle {
+  @media (min-width: $tablet-width) {
+    height: 267px;
   }
 }

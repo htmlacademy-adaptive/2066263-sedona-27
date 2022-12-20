@@ -1,13 +1,34 @@
 .copyright {
   text-align: center;
+  padding: 12px;
+
+  @media (min-width: $tablet-width) {
+    padding: 0;
+  }
 }
 
 .copyright__text {
   @extend %font-desc;
   text-decoration: none;
+  display: flex;
+  column-gap: 12px;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  outline: none;
+
+  &:hover {
+    color: #81b3d2;
+    fill: #81b3d2;
+    outline: none;
+  }
+
+  &:active {
+    color: #b3b3b3;
+    fill: #b3b3b3;
+  }
 }
 
 .copyright__icon {
-  display: inline;
-  fill: $black;
+  display: inline-block;
 }

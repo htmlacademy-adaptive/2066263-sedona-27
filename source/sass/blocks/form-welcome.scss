@@ -1,7 +1,20 @@
 .form-welcome {
-  margin: 0 20px;
+  margin: 0 0 48px 0;
   padding: 0;
   border: none;
+
+  @media (min-width: $tablet-width) {
+    margin: 0;
+    margin-bottom: 48px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 54px;
+  }
+}
+
+.form-welcome:nth-of-type(2) {
+  margin: 0 0 44px 0;
 
   @media (min-width: $tablet-width) {
     margin: 0;
@@ -11,4 +24,23 @@
 .form-welcome__title {
   @extend %font-title;
   font-weight: 700;
+  margin: 0 0 4px 0;
+  padding: 0;
+
+  @media (min-width: $tablet-width) {
+    font-size: 21px;
+    margin: 0 0 12px 20px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin: 0 0 12px 32px;
+  }
+}
+
+.form-welcome:nth-child(2) .form-welcome__title {
+  margin: 0 0 12px -20px;
+
+  @media (min-width: $desktop-width) {
+    margin: 0 0 12px -30px;
+  }
 }

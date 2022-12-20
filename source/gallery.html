@@ -7,6 +7,7 @@
     <link rel="preload" href="fonts/ptsans.woff2" as="font">
     <link rel="preload" href="fonts/ptsansbold.woff2" as="font">
     <link rel="stylesheet" href="css/style.css">
+    <script src="js/script.js" defer></script>
   </head>
   <body class="body">
     <div class="content">
@@ -14,64 +15,70 @@
         <a class="logo" href="#" aria-current="page">
           <img class="logo__image" src="img/logo-sedona.svg" width="185" height="96" loading="lazy" alt="Логотип города Седона.">
         </a>
-        <nav class="page-nav page-nav--nojs">
-          <ul class="nav-list">
+        <nav class="page-nav page-nav--closed">
+          <ul class="nav-list page-nav__list">
             <li class="nav-list__item"><a class="nav-list__link"  href="index.html">Главная</a></li>
-            <li class="nav-list__item"><a class="nav-list__link"  href="gallery.html">Фото и видео</a></li>
+            <li class="nav-list__item"><a class="nav-list__link nav-list__link--current"  href="gallery.html">Фото и видео</a></li>
             <li class="nav-list__item nav-list__item--decor"><a class="nav-list__link" href="form.html">Форма Отзыва</a></li>
             <li class="nav-list__item"><a class="nav-list__link" href="https://htmlacademy.ru">HTML ACADEMY</a></li>
           </ul>
           <button class="page-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span>
           </button>
         </nav>
-        <img class="page-header__image" src="img/letters-sedona.svg" width="229" height="39" alt="Добро пожаловать в Седону!">
+        <picture class="page-header__wrap">
+          <img class="page-header__image" src="img/letters-sedona.svg" width="229" height="39" alt="Добро пожаловать в Седону!">
+        </picture>
       </header>
       <main class="main-catalog">
         <section class="intro">
           <h1 class="intro__title">Фото и видео</h1>
           <p class="intro__desc">Не можете решиться на путешествие из-за курса? Фотографии помогут вам забыть о политике и экономике.</p>
           <div class="gallery">
-            <article class="gallery__item gallery__item--large">
+            <article class="gallery__item">
               <h2 class="visually-hidden">Просторы Седоны</h2>
               <a class="photo-link">
-                <img class="catalog-photo" src="img/img-catalog/countryside-mobile.jpg" width="280" height="280" loading="lazy" alt="Привлекательная местность Седоны.">
+                <img class="catalog-photo catalog-photo--large" src="img/img-catalog/countryside-mobile.jpg" width="280" height="280" loading="lazy" alt="Привлекательная местность Седоны.">
               </a>
-              <section class="photo-desc">
+              <section class="gallery__text photo-desc">
                 <h2 class="photo-desc__title">Неродные просторы</h2>
                 <p class="photo-desc__autor">Автор фото: Борис</p>
+                <span class="visually-hidden">оценка.</span>
                 <output class="photo-desc__likes">1350</output>
               </section>
             </article>
-            <article class="gallery__iteme">
+            <article class="gallery__item">
               <h2 class="visually-hidden">Растительность Седоны</h2>
               <a class="photo-link">
-                <img class="catalog-photo" src="img/img-catalog/plants-mobile.jpg" width="280" height="280" loading="lazy" alt="Удивительные растения Седоны.">
+                <img class="catalog-photo catalog-photo--middle" src="img/img-catalog/plants-mobile.jpg" width="280" height="280" loading="lazy" alt="Удивительные растения Седоны.">
               </a>
-              <section class="photo-desc">
+              <section class="gallery__text photo-desc">
                 <h2 class="photo-desc__title">Местная растительность</h2>
                 <p class="photo-desc__autor">Автор фото: Сергей</p>
+                <span class="visually-hidden">оценка.</span>
                 <output class="photo-desc__likes">143</output>
               </section>
             </article>
-            <article class="gallery__iteme">
+            <article class="gallery__item">
               <h2 class="visually-hidden">Дороги Седоны</h2>
               <a class="photo-link">
-                <img class="catalog-photo" src="img/img-catalog/road-mobile.png" width="280" height="280" loading="lazy" alt="Извилистая дорога у каньона.">
+                <img class="catalog-photo catalog-photo--middle" src="img/img-catalog/road-mobile.png" width="280" height="280" loading="lazy" alt="Извилистая дорога у каньона.">
               </a>
-              <section class="photo-desc">
+              <section class="gallery__text photo-desc">
                 <h2 class="photo-desc__title">Дорога на север</h2>
                 <p class="photo-desc__autor">Автор фото: Петр</p>
+                <span class="visually-hidden">оценка.</span>
                 <output class="photo-desc__likes">96</output>
               </section>
             </article>
-            <article class="gallery__iteme">
+            <article class="gallery__item">
               <h2 class="visually-hidden">Скалы Седоны</h2>
               <a class="photo-link">
-                <img class="catalog-photo" src="img/img-catalog/bridge-mobile.jpg" width="280" height="280" loading="lazy" alt="Вид на красную скалу Мост Дьявола.">
+                <img class="catalog-photo catalog-photo--middle" src="img/img-catalog/bridge-mobile.jpg" width="280" height="280" loading="lazy" alt="Вид на красную скалу Мост Дьявола.">
               </a>
-              <section class="photo-desc">
+              <section class="gallery__text photo-desc">
                 <h2 class="photo-desc__title">Мост дьявола</h2>
                 <p class="photo-desc__autor">Автор фото: Антон</p>
+                <span class="visually-hidden">оценка.</span>
                 <output class="photo-desc__likes">254</output>
               </section>
             </article>
@@ -80,28 +87,32 @@
         <section class="catalog-video">
           <h2 class="catalog-video__title">Все еще сомневаетесь?</h2>
           <p class="catalog-video__desc">Смотрите видеопрезентацию и скорее за билетами, пока они не подорожали в очередной раз!</p>
-          <video class="catalog-video" src= "#" poster="img/img-catalog/sedona-video-mobile.jpg" width="280" height="177"></video>
+          <div class="catalog-video__content">
+            <video src= "#" poster="img/img-catalog/sedona-video-mobile.jpg" width="280" height="177"></video>
+          </div>
         </section>
       </main>
       <footer class="page-footer">
         <a class="page-footer__hashtag" href="#">#visitSEDONA</a>
-        <ul class="social">
+        <ul class="page-footer__social page-footer__social social">
           <li class="social__item">
-            <a class="social__link" href="https://vk.com/htmlacademy" title="Вконтакте HTML Academy">
+            <a class="social__link social__link--vk" href="https://vk.com/htmlacademy" title="вконтакте html academy">
             </a>
           </li>
           <li class="social__item">
-            <a class="social__link" href="https://www.youtube.com/user/htmlacademyru" title="Канал на YouTube HTML Academy">
+            <a class="social__link" href="https://t.me/htmlacademy" title="телеграм html academy">
             </a>
           </li>
           <li class="social__item">
-            <a class="social__link" href="https://t.me/htmlacademy" title="Телеграм HTML Academy">
+            <a class="social__link social__link--youtube" href="https://www.youtube.com/user/htmlacademyru" title="канал на youtube html academy">
             </a>
           </li>
         </ul>
-        <div class="copyright">
-          <a class="copyright__text" href="https://htmlacademy.ru/intensive/adaptive" aria-current="page">разработано
-            <img class="copyright__icon" src="img/academy.svg" width="27" height="35" alt="Логотип HTML академии.">
+        <div class="page-footer__copyright copyright">
+          <a class="copyright__text" href="https://htmlacademy.ru/intensive/adaptive">разработано
+            <svg class="copyright__icon" width="27" height="34" role="img" aria-label="Логотип HTML академии.">
+              <use xlink:href="img/sprite.svg#html-academy"></use>
+            </svg>
           </a>
         </div>
       </footer>

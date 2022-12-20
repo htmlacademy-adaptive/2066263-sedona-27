@@ -1,4 +1,5 @@
 .button {
+  font-family: "PT Sans", sans-serif;
   font-size: 21px;
   line-height: 26px;
   font-weight: bold;
@@ -6,4 +7,18 @@
   text-align: center;
   display: block;
   text-decoration: none;
+  outline: none;
+
+  &:not(:disabled):hover {
+    background-color: #669ec0;
+  }
+
+  &:not(:disabled):active {
+    opacity: 0.3;
+    outline: none;
+  }
+
+  &:disabled {
+    background-color: #e5e5e5;
+  }
 }

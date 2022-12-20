@@ -1,26 +1,46 @@
 .form {
   box-sizing: border-box;
   padding: 0 20px;
+  margin-bottom: 38px;
 
   @media (min-width: $tablet-width) {
     padding: 0 60px;
+    margin-bottom: 52px;
   }
 
   @media (min-width: $desktop-width) {
+    margin-bottom: 62px;
     padding: 0 120px;
   }
 }
 
 .form__button {
-  margin: 0 auto;
-  padding: 0;
+  margin: 0 auto 0 auto;
+  padding: 16px 0 16px 0;
+  width: 100%;
   background-color: $blue;
+  font-size: 21px;
   color: $white;
   text-align: center;
   border: none;
+  cursor: pointer;
 
   @media (min-width: $tablet-width) {
     margin: 0;
+    width: 50%;
+  }
+}
+
+.form__legend {
+  text-transform: uppercase;
+  padding-left: 44%;
+
+  @media (min-width: $tablet-width) {
+    font-size: 14px;
+    padding-left: 18px;
+    justify-self: end;
+    align-self: center;
+    margin-top: 8px;
   }
 }
 
@@ -28,5 +48,10 @@
   @media (min-width: $tablet-width) {
     display: flex;
     justify-content: space-between;
+    flex: 0 0 50%;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 0 94px 0 98px;
   }
 }
