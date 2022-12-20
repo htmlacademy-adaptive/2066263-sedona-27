@@ -68,15 +68,19 @@
 
   &__photo {
     @media (min-width: $tablet-width) {
-      width: 100%;
+      width: 512px;
       object-fit: cover;
       height: 256px;
+    }
+
+    @media (min-width: $desktop-width) {
+      width: 800px;
     }
   }
 
   &__photo--city {
     @media (min-width: $tablet-width) {
-      grid-column: 2/-1;
+      grid-column: 2/4;
     }
   }
 

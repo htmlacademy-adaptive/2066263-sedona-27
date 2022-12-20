@@ -8,14 +8,26 @@
   margin: 0;
   position: relative;
 
+  @media (min-resolution: 2dppx) {
+    background-image: url("../img/img-index/back-mobile@2x.jpg");
+  }
+
   @media (min-width: $tablet-width) {
     padding: 78px 18px 92px 18px;
     background-image: url("../img/img-index/back-tablet.jpg");
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/img-index/back-tablet@2x.jpg");
+    }
   }
 
   @media (min-width: $desktop-width) {
     margin-bottom: 12px;
     background-image: url("../img/img-index/back-desktop.jpg");
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/img-index/back-desktop@2x.jpg");
+    }
   }
 }
 

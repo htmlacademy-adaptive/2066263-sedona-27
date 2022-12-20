@@ -49,7 +49,7 @@
   }
 }
 
-.catalog-video__content > video {
+.catalog-video__content video {
   @media (min-width: $tablet-width) {
     width: 648px;
     height: 500px;

@@ -7,6 +7,10 @@
     <link rel="preload" href="fonts/ptsans.woff2" as="font">
     <link rel="preload" href="fonts/ptsansbold.woff2" as="font">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" href="favicon.ico">
+    <link rel="icon" href="img/favicons/favicon-32x32.png" type="image/svg+xml">
+    <link rel="apple-touch-icon" href="img/favicons/apple-icon-180x180.png">
+    <link rel="manifest" href="manifest.webmanifest">
     <script src="js/script.js" defer></script>
   </head>
   <body class="body">
@@ -37,48 +41,64 @@
             <article class="gallery__item">
               <h2 class="visually-hidden">Просторы Седоны</h2>
               <a class="photo-link">
-                <img class="catalog-photo catalog-photo--large" src="img/img-catalog/countryside-mobile.jpg" width="280" height="280" loading="lazy" alt="Привлекательная местность Седоны.">
-              </a>
+                <picture>
+                  <source media="(min-width: 1200px)" srcset="img/img-catalog/countryside@1x@desktop.jpg, img/img-catalog/countryside@2x@desktop.jpg 2x">
+                  <source media="(min-width: 768px)" srcset="img/img-catalog/countryside@1x@tablet.jpg, img/img-catalog/countryside@2x@tablet.jpg 2x">
+                  <img class="catalog-photo catalog-photo--large" src="img/img-catalog/countryside-mobile.jpg" srcset="img/img-catalog/countryside@2x@mobile.jpg 2x" width="280" height="280" loading="lazy" alt="Привлекательная местность Седоны.">
+                </picture>
+                </a>
               <section class="gallery__text photo-desc">
                 <h2 class="photo-desc__title">Неродные просторы</h2>
                 <p class="photo-desc__autor">Автор фото: Борис</p>
-                <span class="visually-hidden">оценка.</span>
+                <span class="visually-hidden">Количество лайков.</span>
                 <output class="photo-desc__likes">1350</output>
               </section>
             </article>
             <article class="gallery__item">
               <h2 class="visually-hidden">Растительность Седоны</h2>
               <a class="photo-link">
-                <img class="catalog-photo catalog-photo--middle" src="img/img-catalog/plants-mobile.jpg" width="280" height="280" loading="lazy" alt="Удивительные растения Седоны.">
-              </a>
+                <picture>
+                  <source media="(min-width: 1200px)" srcset="img/img-catalog/plants@1x@desktop.jpg, img/img-catalog/plants@2x@desktop.jpg 2x">
+                  <source media="(min-width: 768px)" srcset="img/img-catalog/plants@1x@tablet.jpg, img/img-catalog/plants@2x@tablet.jpg 2x">
+                  <img class="catalog-photo catalog-photo--middle" src="img/img-catalog/plants-mobile.jpg" srcset="img/img-catalog/plants@2x@mobile.jpg 2x" width="280" height="280" loading="lazy" alt="Удивительные растения Седоны.">
+                </picture>
+                </a>
               <section class="gallery__text photo-desc">
                 <h2 class="photo-desc__title">Местная растительность</h2>
                 <p class="photo-desc__autor">Автор фото: Сергей</p>
-                <span class="visually-hidden">оценка.</span>
+                <span class="visually-hidden">Количество лайков.</span>
                 <output class="photo-desc__likes">143</output>
               </section>
             </article>
             <article class="gallery__item">
               <h2 class="visually-hidden">Дороги Седоны</h2>
               <a class="photo-link">
-                <img class="catalog-photo catalog-photo--middle" src="img/img-catalog/road-mobile.png" width="280" height="280" loading="lazy" alt="Извилистая дорога у каньона.">
-              </a>
+                <picture>
+                  <source media="(min-width: 1200px)" srcset="img/img-catalog/road@1x@desktop.jpg, img/img-catalog/road@2x@desktop.jpg 2x">
+                  <source media="(min-width: 768px)" srcset="img/img-catalog/road@1x@tablet.jpg, img/img-catalog/road@2x@tablet.jpg 2x">
+                  <img class="catalog-photo catalog-photo--middle" src="img/img-catalog/road-mobile.png" srcset="img/img-catalog/road@2x@mobile.jpg 2x" width="280" height="280" loading="lazy" alt="Извилистая дорога у каньона.">
+                </picture>
+                </a>
               <section class="gallery__text photo-desc">
                 <h2 class="photo-desc__title">Дорога на север</h2>
                 <p class="photo-desc__autor">Автор фото: Петр</p>
-                <span class="visually-hidden">оценка.</span>
+                <span class="visually-hidden">Количество лайков.</span>
                 <output class="photo-desc__likes">96</output>
               </section>
             </article>
             <article class="gallery__item">
               <h2 class="visually-hidden">Скалы Седоны</h2>
               <a class="photo-link">
-                <img class="catalog-photo catalog-photo--middle" src="img/img-catalog/bridge-mobile.jpg" width="280" height="280" loading="lazy" alt="Вид на красную скалу Мост Дьявола.">
+                <picture>
+                  <source media="(min-width: 1200px)" srcset="img/img-catalog/bridge@1x@desktop.jpg, img/img-catalog/bridge@2x@desktop.jpg 2x">
+                  <source media="(min-width: 768px)" srcset="img/img-catalog/bridge@1x@tablet.jpg, img/img-catalog/bridge@2x@tablet.jpg 2x">
+                  <img class="catalog-photo catalog-photo--middle" src="img/img-catalog/bridge-mobile.jpg" srcset="img/img-catalog/bridge@2x@mobile.jpg 2x" width="280" height="280" loading="lazy" alt="Вид на красную скалу Мост Дьявола.">
+                </picture>
               </a>
               <section class="gallery__text photo-desc">
                 <h2 class="photo-desc__title">Мост дьявола</h2>
                 <p class="photo-desc__autor">Автор фото: Антон</p>
-                <span class="visually-hidden">оценка.</span>
+                <span class="visually-hidden">Количество лайков.</span>
                 <output class="photo-desc__likes">254</output>
               </section>
             </article>
@@ -88,7 +108,8 @@
           <h2 class="catalog-video__title">Все еще сомневаетесь?</h2>
           <p class="catalog-video__desc">Смотрите видеопрезентацию и скорее за билетами, пока они не подорожали в очередной раз!</p>
           <div class="catalog-video__content">
-            <video src= "#" poster="img/img-catalog/sedona-video-mobile.jpg" width="280" height="177"></video>
+            <video src= "#" poster="img/img-catalog/video-tablet.jpg" width="280" height="177">
+            </video>
           </div>
         </section>
       </main>
