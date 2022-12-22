@@ -7,6 +7,10 @@
         <link rel="preload" href="fonts/ptsans.woff2" as="font">
         <link rel="preload" href="fonts/ptsansbold.woff2" as="font">
         <link rel="stylesheet" href="css/style.css">
+        <link rel="icon" href="favicon.ico">
+        <link rel="icon" href="img/favicons/favicon-32x32.png" type="image/svg+xml">
+        <link rel="apple-touch-icon" href="img/favicons/apple-icon-180x180.png">
+        <link rel="manifest" href="manifest.webmanifest">
         <script src="js/script.js" defer></script>
     </head>
   <body class="body">
@@ -41,7 +45,11 @@
               <p class="advantages__order advantages__order--image">— №1 —</p>
               <p class="advantages__description advantages__description--image">Седона не аттракцион для туристов,<br class="advantages__description--space">там течёт своя жизнь</p>
             </section>
-            <img class="advantages__photo advantages__photo--city" src="img/img-index/photo-city@1x.jpg" width="320" height="260" loading="lazy" alt="Красочное фото улицы Седоны.">
+            <picture class="advantages__photo advantages__photo--city">
+              <source media="(min-width: 1200px)" srcset="img/img-index/photo-city@1x@desktop.jpg, img/img-index/photo-city@2x@desktop.jpg 2x">
+              <source media="(min-width: 768px)" srcset="img/img-index/photo-city@1x@tablet.jpg, img/img-index/photo-city@2x@tablet.jpg 2x">
+              <img class="advantages__photo advantages__photo--city" src="img/img-index/photo-city@1x@mobile.jpg" srcset="img/img-index/photo-city@2x@mobile.jpg 2x" width="320" height="260" loading="lazy" alt="Красочное фото улицы Седоны.">
+            </picture>
           </li>
           <li class="advantages__items">
             <ul class="advantages-city">
@@ -65,8 +73,12 @@
               <p class="advantages__order advantages__order--image">— №2 —</p>
               <p class="advantages__description advantages__description--image advantages__description--bridge">Да, по нему можно пройти! Если вы осмелитесь, конечно</p>
             </section>
-            <img class="advantages__photo advantages__photo--bridge" src="img/img-index/photo-bridge@1x.jpg" width="320" height="260" loading="lazy" alt="Вид с высоты птичьего полета на скалу Мост дьявола.">
-          </li>
+            <picture class="advantages__photo advantages__photo--bridge">
+              <source media="(min-width: 1200px)" srcset="img/img-index/photo-bridge@1x@desktop.jpg, img/img-index/photo-bridge@2x@desktop.jpg 2x">
+              <source media="(min-width: 768px)" srcset="img/img-index/photo-bridge@1x@tablet.jpg, img/img-index/photo-bridge@2x@tablet.jpg 2x">
+              <img class="advantages__photo advantages__photo--bridge" src="img/img-index/photo-bridge@1x.jpg" srcset="img/img-index/photo-bridge@2x@mobile.jpg 2x" width="320" height="260" loading="lazy" alt="Вид с высоты птичьего полета на скалу Мост дьявола.">
+            </picture>
+            </li>
           <li class="advantages__item area advantages__item--area">
             <section class="advantages__text">
               <h2 class="advantages__title area__title ">Небольшая площадь</h2>

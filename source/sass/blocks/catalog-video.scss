@@ -34,30 +34,40 @@
 
   @media (min-width: $desktop-width) {
     padding: 0 378px;
+    margin-bottom: 84px;
   }
 }
 
 .catalog-video__content {
   position: relative;
+  margin: 0 auto;
+  background-image: url("../img/img-catalog/sedona-poster-mobile.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
 
-  @media (min-width: $tablet-width) {
-    margin-bottom: 24px;
+  @media (min-resolution: 2dppx) {
+    background-image: url("../img/img-catalog/sedona-poster-mobile@2x.jpg");
   }
 
-  @media (min-width: $desktop-width) {
-    margin-bottom: 76px;
-  }
-}
-
-.catalog-video__content > video {
   @media (min-width: $tablet-width) {
     width: 648px;
     height: 500px;
-    object-fit: inherit;
+    background-image: url("../img/img-catalog/sedona-poster-tablet.jpg");
+    margin-bottom: 24px;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/img-catalog/sedona-poster-tablet@2x.jpg");
+    }
   }
 
   @media (min-width: $desktop-width) {
     width: 800px;
+    margin-bottom: 82px;
+    background-image: url("../img/img-catalog/sedona-poster-desktop.jpg");
+  }
+
+  @media (min-resolution: 2dppx) {
+    background-image: url("../img/img-catalog/sedona-poster-desktop@2x.jpg");
   }
 }
 
