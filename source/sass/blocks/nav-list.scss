@@ -9,7 +9,7 @@
   }
 }
 
-.nav-list__item--decor {
+.nav-list li:nth-of-type(4n-1) {
   @media (min-width: $tablet-width) {
     grid-column: 4/5;
   }

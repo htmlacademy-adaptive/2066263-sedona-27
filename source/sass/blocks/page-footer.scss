@@ -5,8 +5,8 @@
   @media (min-width: $tablet-width) {
     display: flex;
     justify-content: space-between;
-    align-items: center;
-    padding: 16px 60px;
+    align-items: flex-start;
+    padding: 16px 72px 16px 60px;
   }
 
   @media (min-width: $desktop-width) {
@@ -44,7 +44,8 @@
     width: 136px;
     flex: none;
     appearance: none;
-    justify-content: start;
+    justify-content: flex-end;
+    align-self: center;
   }
 
   @media (min-width: $desktop-width) {
@@ -53,13 +54,15 @@
 }
 
 .page-footer__social {
-  padding: 30px 0 28px 0;
+  padding: 0;
   display: block;
+  align-self: flex-start;
 
   @media (min-width: $tablet-width) {
     min-width: 0;
     min-height: 0;
-    width: 176px;
+    width: 256px;
+    padding-left: 20px;
   }
 }
 
@@ -68,5 +71,6 @@
     min-width: 0;
     min-height: 0;
     width: 136px;
+    align-self: center;
   }
 }

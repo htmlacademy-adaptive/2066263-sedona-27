@@ -1,11 +1,14 @@
 .advantages-city {
   @extend %list;
   padding: 14px 20px;
-  margin-bottom: 16px;
+  margin-bottom: 20px;
 
   @media (min-width: $tablet-width) {
     display: flex;
-    padding: 14px 0;
+    padding: 14px 0 0;
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: space-around;
     margin-bottom: 0;
   }
 
@@ -14,6 +17,7 @@
   }
 
   &__item {
+    box-sizing: border-box;
     display: flex;
     flex-wrap: wrap;
     justify-content: flex-start;
@@ -22,8 +26,9 @@
     position: relative;
 
     @media (min-width: $tablet-width) {
+      width: 30%;
       text-align: center;
-      padding: 144px 40px 44px 40px;
+      padding: 144px 20px 44px 20px;
     }
 
     @media (min-width: $desktop-width) {
@@ -33,7 +38,7 @@
 
     &--food {
       @media (min-width: $tablet-width) {
-        padding: 138px 40px 44px 40px;
+        padding: 142px 40px 44px 40px;
       }
 
       @media (min-width: $desktop-width) {
@@ -45,7 +50,7 @@
       padding: 4px 0 0 47px;
 
       @media (min-width: $tablet-width) {
-        padding: 138px 40px 44px 40px;
+        padding: 138px 20px 44px 20px;
       }
 
       @media (min-width: $desktop-width) {
@@ -83,8 +88,9 @@
 
   .advantages-city__item--house::before {
     background-image: url("../img/icons/house.svg");
-    width: 44px;
-    height: 44px;
+    width: 37px;
+    height: 40px;
+
 
     @media (min-width: $tablet-width) {
       width: 78px;
@@ -114,7 +120,7 @@
   }
 
   &__title {
-    margin-bottom: 2px;
+    margin-bottom: 14px;
 
     @media (min-width: $tablet-width) {
       margin-bottom: 22px;
@@ -123,9 +129,12 @@
 
   &__description {
     text-align: start;
+    margin: 0;
+    margin-bottom: 14px;
 
     @media (min-width: $tablet-width) {
       text-align: center;
+      width: 100%;
     }
   }
 }

@@ -4,7 +4,7 @@
   margin-bottom: 22px;
 
   @media (min-width: $tablet-width) {
-    padding: 31px 84px;
+    padding: 34px 84px 30px;
     margin-bottom: 12px;
   }
 
@@ -15,6 +15,7 @@
 
   &__title {
     @extend %font-title;
+    margin-top: 14px;
     margin-bottom: 35px;
 
     @media (min-width: $tablet-width) {
