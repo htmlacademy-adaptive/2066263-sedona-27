@@ -13,7 +13,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    margin-bottom: 10px;
+    margin-bottom: 26px;
   }
 
   &__item {
@@ -32,7 +32,7 @@
     }
 
     @media (min-width: $desktop-width) {
-      padding: 156px 50px 44px 50px;
+      padding: 156px 0 44px 0;
       width: 300px;
     }
 
@@ -42,7 +42,7 @@
       }
 
       @media (min-width: $desktop-width) {
-        padding: 154px 50px 44px 50px;
+        padding: 154px 0 44px 0;
       }
     }
 
@@ -54,7 +54,7 @@
       }
 
       @media (min-width: $desktop-width) {
-        padding: 158px 50px 44px 50px;
+        padding: 158px 0 44px 0;
         width: 300px;
         justify-content: center;
       }
@@ -125,12 +125,16 @@
     @media (min-width: $tablet-width) {
       margin-bottom: 22px;
     }
+
+
+    @media (min-width: $desktop-width) {
+      margin-bottom: 20px;
+    }
   }
 
   &__description {
     text-align: start;
     margin: 0;
-    margin-bottom: 14px;
 
     @media (min-width: $tablet-width) {
       text-align: center;
