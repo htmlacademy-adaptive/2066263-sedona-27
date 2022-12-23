@@ -4,6 +4,7 @@
   margin: 0 auto;
   padding: 0;
   width: 320px;
+  position: relative;
 
   @media (min-width: $mobile-width-only) {
     $mobile-width-only: 767px;
@@ -15,5 +16,24 @@
 
   @media (min-width: $desktop-width) {
     min-width: $desktop-width;
+  }
+}
+
+.content::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+  top: 356px;
+  height: 1px;
+  background-color: #e5e5e5;
+  box-shadow: 0 380px 0 0 #e5e5e5,
+    0 658px 0 0 #e5e5e5,
+    0 924px 0 0 #e5e5e5,
+    0 1276px 0 0 #e5e5e5;
+
+  @media (min-width: $tablet-width) {
+    display: none;
   }
 }

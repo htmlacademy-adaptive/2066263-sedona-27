@@ -1,22 +1,16 @@
 .social {
-  text-align: center;
-  display: block;
+  list-style: none;
 
   @media (min-width: $tablet-width) {
-    list-style: none;
-    margin: 0;
+    // margin-left: 74px;
   }
 }
 
 .social__item {
-  cursor: default;
-
-  @media (min-width: $tablet-width) {
-    display: inline-block;
-    box-sizing: border-box;
-    padding: 16px 0;
-    margin: 0 1px;
-  }
+  display: inline-block;
+  box-sizing: border-box;
+  padding: 16px 0;
+  margin: 0 1px;
 }
 
 .social__link {

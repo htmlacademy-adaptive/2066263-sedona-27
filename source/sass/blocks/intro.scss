@@ -44,10 +44,11 @@
 
 .intro__desc {
   @extend %font-desc;
-  margin-bottom: 62px;
+  margin-bottom: 34px;
 
   @media (min-width: $tablet-width) {
     padding: 0 110px 0 110px;
+    margin-bottom: 64px;
   }
 
   @media (min-width: $desktop-width) {
