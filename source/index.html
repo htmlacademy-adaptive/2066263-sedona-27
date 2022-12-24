@@ -16,8 +16,10 @@
   <body class="body">
     <div class="content">
       <header class="page-header page-header--index">
-        <a class="logo" href="#" aria-current="page">
-          <img class="logo__image" src="img/logo-sedona.svg" width="185" height="96" alt="Логотип города Седона.">
+        <a class="logo" href="#">
+          <svg class="logo__image" role="img" aria-label="Логотип города Седона.">
+            <use xlink:href="img/sprite.svg#logo-sedona"></use>
+          </svg>
         </a>
         <nav class="page-nav page-nav--nojs">
           <ul class="nav-list page-nav__list">
@@ -46,7 +48,9 @@
               <p class="advantages__description advantages__description--image">Седона не аттракцион для туристов, там течёт своя жизнь</p>
             </section>
             <picture class="advantages__photo advantages__photo--city">
+              <source media="(min-width: 1200px)" type="image/webp" srcset="img/img-index/photo-city@1x@desktop.webp, img/img-index/photo-city@2x@desktop.webp 2x">
               <source media="(min-width: 1200px)" srcset="img/img-index/photo-city@1x@desktop.jpg, img/img-index/photo-city@2x@desktop.jpg 2x">
+              <source media="(min-width: 768px)" type="image/webp" srcset="img/img-index/photo-city@1x@tablet.webp, img/img-index/photo-city@2x@tablet.webp 2x">
               <source media="(min-width: 768px)" srcset="img/img-index/photo-city@1x@tablet.jpg, img/img-index/photo-city@2x@tablet.jpg 2x">
               <img class="advantages__photo advantages__photo--city" src="img/img-index/photo-city@1x@mobile.jpg" srcset="img/img-index/photo-city@2x@mobile.jpg 2x" width="320" height="260" loading="lazy" alt="Красочное фото улицы Седоны.">
             </picture>
@@ -90,7 +94,7 @@
             <section class="advantages__text">
               <h2 class="area__title advantages__title">красивая дорога</h2>
               <p class="area__order advantages__order">— №4 —</p>
-              <p class="area__description advantages__description">ехать в седону из лас-вегаса совсем <br>не скучно!</p>
+              <p class="area__description advantages__description">ехать в седону из лас-вегаса совсем <br class="advantages__text--space">не скучно!</p>
             </section>
           </li>
           <li class="advantages__item area advantages__item--area">
@@ -107,7 +111,7 @@
           Заинтересовались?
         </h2>
         <p class="search-hotel__description">
-        Укажите предполагаемые даты поездки, <br>и мы покажем вам лучшие предложения гостиниц в Седоне
+        Укажите предполагаемые даты поездки, <br class="search-hotel--space">и мы покажем вам лучшие предложения гостиниц в Седоне
         </p>
         <a class="button search-hotel__button" href="#">найти гостиницу</a>
       </section>

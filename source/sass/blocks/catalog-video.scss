@@ -48,6 +48,7 @@
   background-image: url("../img/img-catalog/sedona-poster-mobile.jpg");
   background-repeat: no-repeat;
   background-size: cover;
+  cursor: pointer;
 
   @media (min-resolution: 2dppx) {
     background-image: url("../img/img-catalog/sedona-poster-mobile@2x.jpg");

@@ -43,3 +43,11 @@
   @extend %button;
   padding: 17px;
 }
+
+.search-hotel--space {
+  display: none;
+
+  @media (min-width: $tablet-width) {
+    display: inline;
+  }
+}
