@@ -18,6 +18,10 @@
   }
 }
 
+.modal-failure--active {
+  opacity: 1;
+}
+
 .modal-failure__title {
   @extend %font-title;
   margin-bottom: 26px;
