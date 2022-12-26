@@ -4,11 +4,12 @@
 
   @media (min-width: $tablet-width) {
     padding: 48px 156px 20px 156px;
+    margin: 0 auto 36px auto;
   }
 
   @media (min-width: $desktop-width) {
     padding: 48px 369px 20px 369px;
-    margin: 0 auto 42px auto;
+    margin: 0 auto 44px auto;
   }
 
   &__title {
@@ -29,7 +30,7 @@
 
     @media (min-width: $tablet-width) {
       line-height: 22px;
-      margin-bottom: 40px;
+      margin-bottom: 38px;
     }
 
     @media (min-width: $desktop-width) {
@@ -41,4 +42,12 @@
 .search-hotel__button {
   @extend %button;
   padding: 17px;
+}
+
+.search-hotel--space {
+  display: none;
+
+  @media (min-width: $tablet-width) {
+    display: inline;
+  }
 }

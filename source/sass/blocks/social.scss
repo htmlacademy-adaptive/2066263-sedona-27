@@ -1,17 +1,21 @@
 .social {
-  text-align: center;
-  display: block;
+  list-style: none;
+
+  @media (min-width: $tablet-width) {
+    // margin-left: 74px;
+  }
 }
 
 .social__item {
-  display: inline;
-  cursor: default;
+  display: inline-block;
+  box-sizing: border-box;
+  padding: 16px 0;
+  margin: 0 1px;
 }
 
 .social__link {
   padding: 14px 24px;
   background-color: $blue;
-  margin: 4px;
   position: relative;
 
   &:hover {

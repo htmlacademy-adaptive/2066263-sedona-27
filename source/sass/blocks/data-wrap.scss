@@ -1,13 +1,31 @@
 .data-wrap {
   @media (min-width: $tablet-width) {
     display: grid;
-    grid-template-columns: 280px 280px;
-    gap: 88px;
-    padding-top: 50px;
+    grid-template-columns: 280px 320px;
+    gap: 48px;
+    padding-top: 52px;
+    position: relative;
   }
 
   @media (min-width: $desktop-width) {
     grid-template-columns: 430px 402px;
     gap: 128px;
+  }
+}
+
+
+.data-wrap::before {
+  @media (min-width: $tablet-width) {
+    content: "";
+    position: absolute;
+    width: 1px;
+    height: 340px;
+    top: 50px;
+    left: 49.5%;
+    background-color: #e5e5e5;
+
+    @media (min-width: $desktop-width) {
+      left: 51.5%;
+    }
   }
 }

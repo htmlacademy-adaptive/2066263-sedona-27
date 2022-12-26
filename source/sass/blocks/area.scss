@@ -6,13 +6,14 @@
     margin: 0 auto 12px auto;
   }
 
-  @media (min-width: $tablet-width) {
-    width: 70%;
+  @media (min-width: $desktop-width) {
+    width: 50%;
   }
 }
 
 .area__order {
-  margin-bottom: 14px;
+  margin-top: 12px;
+  margin-bottom: 15px;
 
   @media (min-width: $tablet-width) {
     margin-bottom: 24px;

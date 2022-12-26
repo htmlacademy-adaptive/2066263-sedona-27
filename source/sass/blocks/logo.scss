@@ -2,9 +2,21 @@
   position: absolute;
   top: 0;
   left: 50%;
+  width: 186px;
+  height: 96px;
   transform: translateX(-50%);
 
   @media (min-width: $tablet-width) {
     z-index: 3;
+  }
+}
+
+.logo__image {
+  width: 196px;
+  height: 100px;
+
+  @media (min-width: $tablet-width) {
+    width: 185px;
+    height: 96px;
   }
 }
