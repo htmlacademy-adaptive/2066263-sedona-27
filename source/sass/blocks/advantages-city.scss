@@ -62,7 +62,7 @@
 
     &::before {
       content: "";
-      background-image: url("../img/icons/burger.svg");
+      background-image: url("../img/burger.svg");
       background-repeat: no-repeat;
       background-size: cover;
       position: absolute;
@@ -87,7 +87,7 @@
   }
 
   .advantages-city__item--house::before {
-    background-image: url("../img/icons/house.svg");
+    background-image: url("../img/house.svg");
     width: 37px;
     height: 40px;
 
@@ -99,7 +99,7 @@
   }
 
   .advantages-city__item--gift::before {
-    background-image: url("../img/icons/gift.svg");
+    background-image: url("../img/gift.svg");
     width: 34px;
     height: 40px;
     left: 0;
