@@ -11,7 +11,6 @@
         <link rel="icon" href="img/favicons/favicon-32x32.png" type="image/svg+xml">
         <link rel="apple-touch-icon" href="img/favicons/apple-icon-180x180.png">
         <link rel="manifest" href="manifest.webmanifest">
-        <script src="js/script.min.js" defer></script>
     </head>
   <body class="body">
     <div class="content">
@@ -23,22 +22,24 @@
         </a>
         <nav class="page-nav page-nav--nojs">
           <ul class="nav-list page-nav__list">
-            <li class="nav-list__item"><a class="nav-list__link nav-list__link--current"  href="index.html">Главная</a></li>
+            <li class="nav-list__item"><a class="nav-list__link nav-list__link--current" aria-current="page" href="index.html">Главная</a></li>
             <li class="nav-list__item"><a class="nav-list__link"  href="gallery.html">Фото и видео</a></li>
-            <li class="nav-list__item nav-list__item--decor"><a class="nav-list__link" href="form.html">Форма Отзыва</a></li>
+            <li class="nav-list__item"><a class="nav-list__link" href="form.html">Форма Отзыва</a></li>
             <li class="nav-list__item"><a class="nav-list__link" href="https://htmlacademy.ru">HTML ACADEMY</a></li>
           </ul>
           <button class="page-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span>
           </button>
         </nav>
+        <div class="welcome">
+          <svg class="welcome__image" role="img" viewBox="0 0 282 214" aria-label="Добро пожаловать в Седону!">
+            <use xlink:href="img/sprite.svg#phrases-sedona"></use>
+          </svg>
+        </div>
       </header>
       <main class="main-index">
-        <div class="welcome">
-          <img class="welcome__image" src="img/phrases-sedona.svg" width="282" height="214" alt="Добро пожаловать в Седону!">
-        </div>
         <section class="index-lead">
-          <H1 class="index-lead__title">Седона — небольшой городок в Аризоне, заслуживающий большего!</H1>
-          <p class="index-lead__desc">Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!</p>
+          <p class="index-lead__title">Седона — небольшой городок в Аризоне,<span class="index-lead__block">заслуживающий большего!</span></p>
+          <h1 class="index-lead__desc">Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!</h1>
         </section>
         <ol class="advantages">
           <li class="advantages__item advantages__item--image">
@@ -145,5 +146,6 @@
         </div>
       </footer>
     </div>
+    <script src="js/script.min.js" defer></script>
   </body>
 </html>
