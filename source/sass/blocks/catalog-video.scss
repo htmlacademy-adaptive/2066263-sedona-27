@@ -3,16 +3,17 @@
   text-align: center;
 
   @media (min-width: $tablet-width) {
-    padding-top: 38px;
+    padding-top: 36px;
   }
 
   @media (min-width: $desktop-width) {
-    padding-top: 32px;
+    padding-top: 30px;
   }
 }
 
 .catalog-video__title {
   @extend %font-title;
+  font-weight: 700;
   display: block;
   margin: 0;
   margin-bottom: 28px;
@@ -26,6 +27,7 @@
 
 .catalog-video__desc {
   @extend %font-desc;
+  font-weight: 400;
   margin: 0;
   padding: 0 22px;
   margin-bottom: 36px;
@@ -33,12 +35,17 @@
 
   @media (min-width: $tablet-width) {
     margin-bottom: 90px;
-    padding: 0 138px;
   }
 
   @media (min-width: $desktop-width) {
     padding: 0 378px;
     margin-bottom: 84px;
+  }
+}
+
+.catalog-video__block {
+  @media (min-width: $tablet-width) {
+    display: block;
   }
 }
 

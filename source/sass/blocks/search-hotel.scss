@@ -3,12 +3,12 @@
   padding: 32px 17px 20px 17px;
 
   @media (min-width: $tablet-width) {
-    padding: 48px 156px 20px 156px;
+    padding: 62px 10px 20px 10px;
     margin: 0 auto 36px auto;
   }
 
   @media (min-width: $desktop-width) {
-    padding: 48px 369px 20px 369px;
+    padding: 62px 10px 20px 10px;
     margin: 0 auto 44px auto;
   }
 
@@ -42,12 +42,18 @@
 .search-hotel__button {
   @extend %button;
   padding: 17px;
-}
-
-.search-hotel--space {
-  display: none;
 
   @media (min-width: $tablet-width) {
-    display: inline;
+    width: 57%;
+  }
+
+  @media (min-width: $tablet-width) {
+    width: 36%;
+  }
+}
+
+.search-hotel__block {
+  @media (min-width: $tablet-width) {
+    display: block;
   }
 }

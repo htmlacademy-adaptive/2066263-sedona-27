@@ -1,16 +1,12 @@
 .social {
   list-style: none;
-
-  @media (min-width: $tablet-width) {
-    // margin-left: 74px;
-  }
 }
 
 .social__item {
   display: inline-block;
   box-sizing: border-box;
   padding: 16px 0;
-  margin: 0 1px;
+  margin: 0 3px;
 }
 
 .social__link {

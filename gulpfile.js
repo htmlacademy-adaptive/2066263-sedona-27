@@ -1,4 +1,5 @@
 import gulp from 'gulp';
+import htmlmin from 'gulp-htmlmin';
 import plumber from 'gulp-plumber';
 import sass from 'gulp-dart-sass';
 import postcss from 'gulp-postcss';
@@ -31,6 +32,7 @@ csso()
 
 const html = () => {
 return gulp.src('source/*.html')
+.pipe(htmlmin({collapseWhitespace: true}))
 .pipe(gulp.dest('build'));
 }
 
@@ -90,6 +92,7 @@ const copy = (done) => {
 gulp.src([
 'source/fonts/*.{woff2,woff}',
 'source/*.ico',
+'source/manifest.webmanifest'
 ], {
 base: 'source'
 })

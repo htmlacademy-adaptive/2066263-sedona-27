@@ -1,9 +1,9 @@
 .intro {
   margin: 0;
-  padding: 38px 0 0 0;
+  padding: 36px 0 34px 0;
 
   @media (min-width: $tablet-width) {
-    padding: 66px 40px 0 40px;
+    padding: 66px 40px 64px 40px;
   }
 
   @media (min-width: $desktop-width) {
@@ -44,11 +44,10 @@
 
 .intro__desc {
   @extend %font-desc;
-  margin-bottom: 34px;
+  margin-bottom: 0;
 
   @media (min-width: $tablet-width) {
-    padding: 0 110px 0 110px;
-    margin-bottom: 64px;
+    padding: 0;
   }
 
   @media (min-width: $desktop-width) {
@@ -71,5 +70,11 @@
 @media (min-width: $desktop-width) {
   .intro__title--form {
     margin-bottom: 30px;
+  }
+}
+
+.intro__block {
+  @media (min-width: $tablet-width) {
+    display: block;
   }
 }
