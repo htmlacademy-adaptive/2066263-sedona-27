@@ -39,14 +39,24 @@
   margin-bottom: 50px;
 }
 
+.modal-success__block {
+  display: block;
+}
+
 .modal-success__button {
   @extend %button;
   font-size: 18px;
   padding: 18px 76px 14px;
   box-sizing: border-box;
+  background-color: rgba(129, 179, 210, 1);
   border: 20px #f2f2f2 solid;
   margin: 0;
   width: 100%;
+
+  &:not(:disabled):active {
+    opacity: 1;
+    background-color: rgba(129, 179, 210, 0.3);
+  }
 
   @media (min-width: $tablet-width) {
     border-width: 44px 91px;

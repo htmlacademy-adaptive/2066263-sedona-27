@@ -168,6 +168,12 @@
       }
     }
   }
+
+  &__block {
+    @media (min-width: $tablet-width) {
+      display: block;
+    }
+  }
 }
 
 .advantages__text {
@@ -205,15 +211,6 @@
 
     @media (min-width: $desktop-width) {
       padding: 20px 40px 4px 36px;
-    }
-  }
-
-  .advantages__text--space,
-  .advantages__description--space {
-    display: none;
-
-    @media (min-width: $tablet-width) {
-      display: inline;
     }
   }
 }
