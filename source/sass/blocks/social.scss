@@ -1,16 +1,12 @@
 .social {
   list-style: none;
-
-  @media (min-width: $tablet-width) {
-    // margin-left: 74px;
-  }
 }
 
 .social__item {
   display: inline-block;
   box-sizing: border-box;
   padding: 16px 0;
-  margin: 0 1px;
+  margin: 0 3px;
 }
 
 .social__link {
@@ -30,7 +26,7 @@
 
 .social__link::after {
   content: "";
-  background-image: url("../img/icons/telegram.svg");
+  background-image: url("../img/telegram.svg");
   position: absolute;
   width: 24px;
   height: 20px;
@@ -41,9 +37,9 @@
 }
 
 .social__link--vk::after {
-  background-image: url("../img/icons/vk.svg");
+  background-image: url("../img/vk.svg");
 }
 
 .social__link--youtube::after {
-  background-image: url("../img/icons/youtube.svg");
+  background-image: url("../img/youtube.svg");
 }

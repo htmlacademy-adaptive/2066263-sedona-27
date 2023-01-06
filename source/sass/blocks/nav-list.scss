@@ -5,6 +5,7 @@
   @media (min-width: $tablet-width) {
     background-color: $white;
     display: grid;
+    gap: 20px;
     grid-template-columns: repeat(5, 1fr);
   }
 }
@@ -43,6 +44,8 @@
   text-decoration: none;
   color: $white;
   display: block;
+  width: 60%;
+  margin: 0 auto;
   padding: 17px 30px 11px 30px;
 
   &:hover {
@@ -56,7 +59,9 @@
 
   @media (min-width: $tablet-width) {
     color: $black;
-    padding: 20px 10px 14px 10px;
+    padding: 0;
+    width: auto;
+    margin: auto;
 
     &:hover {
       background-color: $white;

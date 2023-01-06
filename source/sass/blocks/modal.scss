@@ -6,9 +6,17 @@
   height: 100%;
   z-index: 3;
   background-color: rgba(0, 0, 0, 0.3);
+  display: block;
+}
+
+.modal--open {
+  display: block;
+}
+
+.modal:not(.modal--open) {
   display: none;
 }
 
-.modal--active {
+.modal--open > .modal-failure {
   display: block;
 }

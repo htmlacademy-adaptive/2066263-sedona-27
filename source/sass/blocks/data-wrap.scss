@@ -8,6 +8,7 @@
   }
 
   @media (min-width: $desktop-width) {
+    padding-top: 50px;
     grid-template-columns: 430px 402px;
     gap: 128px;
   }
