@@ -15,7 +15,7 @@
 .request__title {
   @extend %font-title;
   font-weight: 700;
-  margin: 0 0 24px 0;
+  margin: 0 auto 24px auto;
 
   @media (min-width: $tablet-width) {
     width: 50%;
@@ -27,7 +27,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    margin: 0 0 42px 0;
+    margin: 0 auto 42px auto;
     width: 40%;
   }
 }
@@ -51,7 +51,7 @@
     grid-template-columns: repeat(2, 1fr);
     column-gap: 44px;
     justify-content: space-around;
-    padding: 8px 36px;
+    padding: 8px 38px;
   }
 
   @media (min-width: $desktop-width) {

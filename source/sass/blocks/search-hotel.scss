@@ -1,6 +1,6 @@
 .search-hotel {
   margin: 0 auto 26px auto;
-  padding: 32px 17px 20px 17px;
+  padding: 42px 17px 20px 17px;
 
   @media (min-width: $tablet-width) {
     padding: 62px 10px 20px 10px;
@@ -8,7 +8,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    padding: 62px 10px 20px 10px;
+    padding: 60px 10px 20px 10px;
     margin: 0 auto 44px auto;
   }
 
@@ -26,7 +26,7 @@
 
   &__description {
     @extend %font-desc;
-    margin-bottom: 30px;
+    margin-bottom: 32px;
 
     @media (min-width: $tablet-width) {
       line-height: 22px;

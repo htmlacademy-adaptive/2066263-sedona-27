@@ -29,11 +29,12 @@
   @extend %font-desc;
   font-weight: 400;
   margin: 0;
-  padding: 0 22px;
+  padding: 0 20px 0 24px;
   margin-bottom: 36px;
   position: relative;
 
   @media (min-width: $tablet-width) {
+    padding: 0 18px 0 24px;
     margin-bottom: 90px;
   }
 
@@ -76,10 +77,10 @@
     width: 800px;
     margin-bottom: 82px;
     background-image: url("../img/img-catalog/sedona-poster-desktop.jpg");
-  }
 
-  @media (min-resolution: 2dppx) {
-    background-image: url("../img/img-catalog/sedona-poster-desktop@2x.jpg");
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/img-catalog/sedona-poster-desktop@2x.jpg");
+    }
   }
 }
 

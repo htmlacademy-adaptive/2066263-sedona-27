@@ -2,7 +2,7 @@
   @extend %list;
 
   @media (min-width: $tablet-width) {
-    padding: 10px 66px 0 86px;
+    padding: 10px 66px 0 89px;
     margin-bottom: 3px;
     justify-self: center;
   }
@@ -43,7 +43,7 @@
 
 .sights-checkbox__input[type="checkbox"]:checked + .sights-checkbox__icon-checkbox {
   background-image: url("../img/tick.svg");
-  background-size: 50% 50%;
+  background-size: 50% 40%;
   background-position: 50% 50%;
   background-repeat: no-repeat;
 }
