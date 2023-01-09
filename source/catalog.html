@@ -4,12 +4,13 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Седона</title>
-    <link rel="preload" as="font" href="fonts/ptsans.woff2"  crossorigin="anonymous">
     <link rel="stylesheet" href="css/style.min.css">
     <link rel="icon" href="favicon.ico">
     <link rel="icon" href="img/favicons/favicon-32x32.png" type="image/svg+xml">
     <link rel="apple-touch-icon" href="img/favicons/apple-icon-180x180.png">
     <link rel="manifest" href="manifest.webmanifest">
+    <link rel="manifest" href="img/favicons/manifest.json">
+    <link rel="preload" as="font" href="fonts/ptsans.woff2" crossorigin="anonymous">
   </head>
   <body class="body">
     <div class="content">
@@ -19,10 +20,10 @@
             <use xlink:href="img/sprite.svg#logo-sedona"></use>
           </svg>
         </a>
-        <nav class="page-nav  page-nav--nojs">
+        <nav class="page-nav page-nav--closed">
           <ul class="nav-list page-nav__list">
             <li class="nav-list__item"><a class="nav-list__link"  href="index.html">Главная</a></li>
-            <li class="nav-list__item"><a class="nav-list__link nav-list__link--current" aria-current="page" href="gallery.html">Фото и видео</a></li>
+            <li class="nav-list__item"><a class="nav-list__link nav-list__link--current" aria-current="page" href="catalog.html">Фото и видео</a></li>
             <li class="nav-list__item"><a class="nav-list__link" href="form.html">Форма Отзыва</a></li>
             <li class="nav-list__item"><a class="nav-list__link" href="https://htmlacademy.ru">HTML ACADEMY</a></li>
           </ul>
@@ -30,9 +31,7 @@
           </button>
         </nav>
         <div  class="page-header__wrap">
-          <svg class="page-header__image" role="img" viewBox="0 0 228 39" width="280" height="40" aria-label="Добро пожаловать в Седону!">
-            <use xlink:href="img/sprite.svg#letters-sedona"></use>
-          </svg>
+          <img class="page-header__image" src="img/letters-sedona.svg" width="229" height="39" alt="Добро пожаловать в Седону!">
         </div>
       </header>
       <main class="main-catalog">
@@ -43,15 +42,16 @@
         <div class="gallery">
           <article class="gallery__item">
             <h2 class="visually-hidden">Просторы Седоны</h2>
-            <a class="photo-link" href="#">
+            <a class="gallery__photo" href="#">
               <picture>
                 <source media="(min-width: 1200px)" type="image/webp" srcset="img/img-catalog/countryside@1x@desktop.webp, img/img-catalog/countryside@2x@desktop.webp 2x">
                 <source media="(min-width: 1200px)" srcset="img/img-catalog/countryside@1x@desktop.jpg, img/img-catalog/countryside@2x@desktop.jpg 2x">
                 <source media="(min-width: 768px)" type="image/webp" srcset="img/img-catalog/countryside@1x@tablet.webp, img/img-catalog/countryside@2x@tablet.webp 2x">
                 <source media="(min-width: 768px)" srcset="img/img-catalog/countryside@1x@tablet.jpg, img/img-catalog/countryside@2x@tablet.jpg 2x">
-                <img class="catalog-photo catalog-photo--large" src="img/img-catalog/countryside-mobile.jpg" srcset="img/img-catalog/countryside@2x@mobile.jpg 2x" width="280" height="280" loading="lazy" alt="Привлекательная местность Седоны.">
+                <source media="(min-width: 230px)" type="image/webp" srcset="img/img-catalog/countryside-mobile.webp, img/img-catalog/countryside@2x@mobile.webp 2x">
+                <img class="catalog-photo catalog-photo--large" src="img/img-catalog/countryside-mobile.jpg" srcset="img/img-catalog/countryside@2x@mobile.jpg 2x" width="280" height="280" alt="Привлекательная местность Седоны.">
               </picture>
-              </a>
+            </a>
             <section class="gallery__text photo-desc">
               <h2 class="photo-desc__title">Неродные просторы</h2>
               <p class="photo-desc__autor">Автор фото: Борис</p>
@@ -61,15 +61,16 @@
           </article>
           <article class="gallery__item">
             <h2 class="visually-hidden">Растительность Седоны</h2>
-            <a class="photo-link" href="#">
+            <a class="gallery__photo" href="#">
               <picture>
                 <source media="(min-width: 1200px)" type="image/webp" srcset="img/img-catalog/plants@1x@desktop.webp, img/img-catalog/plants@2x@desktop.webp 2x">
                 <source media="(min-width: 1200px)" srcset="img/img-catalog/plants@1x@desktop.jpg, img/img-catalog/plants@2x@desktop.jpg 2x">
                 <source media="(min-width: 768px)" type="image/webp" srcset="img/img-catalog/plants@1x@tablet.webp, img/img-catalog/plants@2x@tablet.webp 2x">
                 <source media="(min-width: 768px)" srcset="img/img-catalog/plants@1x@tablet.jpg, img/img-catalog/plants@2x@tablet.jpg 2x">
+                <source media="(min-width: 230px)" type="image/webp" srcset="img/img-catalog/plants-mobile.webp, img/img-catalog/plants@2x@mobile.webp 2x">
                 <img class="catalog-photo catalog-photo--middle" src="img/img-catalog/plants-mobile.jpg" srcset="img/img-catalog/plants@2x@mobile.jpg 2x" width="280" height="280" loading="lazy" alt="Удивительные растения Седоны.">
               </picture>
-              </a>
+            </a>
             <section class="gallery__text photo-desc">
               <h2 class="photo-desc__title">Местная растительность</h2>
               <p class="photo-desc__autor">Автор фото: Сергей</p>
@@ -79,15 +80,16 @@
           </article>
           <article class="gallery__item">
             <h2 class="visually-hidden">Дороги Седоны</h2>
-            <a class="photo-link" href="#">
+            <a class="gallery__photo" href="#">
               <picture>
                 <source media="(min-width: 1200px)" type="image/webp" srcset="img/img-catalog/road@1x@desktop.webp, img/img-catalog/road@2x@desktop.webp 2x">
                 <source media="(min-width: 1200px)" srcset="img/img-catalog/road@1x@desktop.jpg, img/img-catalog/road@2x@desktop.jpg 2x">
                 <source media="(min-width: 768px)" type="image/webp" srcset="img/img-catalog/road@1x@tablet.webp, img/img-catalog/road@2x@tablet.webp 2x">
                 <source media="(min-width: 768px)" srcset="img/img-catalog/road@1x@tablet.jpg, img/img-catalog/road@2x@tablet.jpg 2x">
+                <source media="(min-width: 230px)" type="image/webp" srcset="img/img-catalog/road-mobile.webp, img/img-catalog/road@2x@mobile.webp 2x">
                 <img class="catalog-photo catalog-photo--middle" src="img/img-catalog/road-mobile.png" srcset="img/img-catalog/road@2x@mobile.jpg 2x" width="280" height="280" loading="lazy" alt="Извилистая дорога у каньона.">
               </picture>
-              </a>
+            </a>
             <section class="gallery__text photo-desc">
               <h2 class="photo-desc__title">Дорога на север</h2>
               <p class="photo-desc__autor">Автор фото: Петр</p>
@@ -97,12 +99,13 @@
           </article>
           <article class="gallery__item">
             <h2 class="visually-hidden">Скалы Седоны</h2>
-            <a class="photo-link" href="#">
+            <a class="gallery__photo" href="#">
               <picture>
                 <source media="(min-width: 1200px)" type="image/webp" srcset="img/img-catalog/bridge@1x@desktop.webp, img/img-catalog/bridge@2x@desktop.webp 2x">
                 <source media="(min-width: 1200px)" srcset="img/img-catalog/bridge@1x@desktop.jpg, img/img-catalog/bridge@2x@desktop.jpg 2x">
                 <source media="(min-width: 768px)" type="image/webp" srcset="img/img-catalog/bridge@1x@tablet.webp, img/img-catalog/bridge@2x@tablet.webp 2x">
                 <source media="(min-width: 768px)" srcset="img/img-catalog/bridge@1x@tablet.jpg, img/img-catalog/bridge@2x@tablet.jpg 2x">
+                <source media="(min-width: 230px)" type="image/webp" srcset="img/img-catalog/bridge-mobile.webp, img/img-catalog/bridge@2x@mobile.webp 2x">
                 <img class="catalog-photo catalog-photo--middle" src="img/img-catalog/bridge-mobile.jpg" srcset="img/img-catalog/bridge@2x@mobile.jpg 2x" width="280" height="280" loading="lazy" alt="Вид на красную скалу Мост Дьявола.">
               </picture>
             </a>

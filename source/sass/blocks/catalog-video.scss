@@ -1,8 +1,9 @@
 .catalog-video {
-  margin: 0 auto;
+  margin: 0 20px;
   text-align: center;
 
   @media (min-width: $tablet-width) {
+    margin: 0 auto;
     padding-top: 36px;
   }
 
