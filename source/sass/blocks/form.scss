@@ -33,7 +33,8 @@
 
 .form__legend {
   text-transform: uppercase;
-  padding-left: 45.7%;
+  text-align: end;
+  display: block;
 
   @media (min-width: $tablet-width) {
     font-size: 14px;

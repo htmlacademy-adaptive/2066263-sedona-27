@@ -1,6 +1,7 @@
 .advantages-city {
-  @extend %list;
+  margin: 0;
   padding: 14px 20px;
+  list-style-type: none;
   margin-bottom: 34px;
 
   @media (min-width: $tablet-width) {
@@ -16,7 +17,7 @@
     margin-bottom: 26px;
   }
 
-  &__item {
+  .advantages-city__item {
     box-sizing: border-box;
     display: flex;
     flex-wrap: wrap;
@@ -36,7 +37,7 @@
       width: 300px;
     }
 
-    &--food {
+    .advantages-city__item--food {
       @media (min-width: $tablet-width) {
         padding: 142px 40px 44px 40px;
       }
@@ -46,7 +47,7 @@
       }
     }
 
-    &--gift {
+    .advantages-city__item--gift {
       padding: 4px 0 0 47px;
 
       @media (min-width: $tablet-width) {
@@ -119,7 +120,7 @@
     }
   }
 
-  &__title {
+  .advantages-city__title {
     margin-bottom: 14px;
 
     @media (min-width: $tablet-width) {
@@ -132,7 +133,7 @@
     }
   }
 
-  &__description {
+  .advantages-city__description {
     text-align: start;
     margin: 0;
 

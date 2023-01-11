@@ -40,7 +40,12 @@
 .photo-desc__title,
 .photo-desc__autor,
 .photo-desc__likes {
-  @extend %font-desc;
+  font-family: "PT Sans", "Tahoma", sans-serif;
+  font-size: 14px;
+  line-height: 21px;
+  color: #333333;
+  text-transform: uppercase;
+  text-align: center;
   margin: 0;
   padding: 0;
   text-align: start;

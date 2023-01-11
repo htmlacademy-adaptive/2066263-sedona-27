@@ -13,7 +13,12 @@
 }
 
 .request__title {
-  @extend %font-title;
+  font-family: "PT Sans", "Tahoma", sans-serif;
+  font-size: 18px;
+  line-height: 26px;
+  color: #000000;
+  text-transform: uppercase;
+  text-align: center;
   font-weight: 700;
   margin: 0 auto 24px auto;
 
@@ -33,7 +38,10 @@
 }
 
 .request__label {
-  @extend %font-title;
+  font-family: "PT Sans", "Tahoma", sans-serif;
+  font-size: 18px;
+  line-height: 26px;
+  color: #000000;
   font-weight: 700;
   display: block;
   text-transform: none;

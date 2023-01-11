@@ -4,7 +4,11 @@
 }
 
 .user-data__label {
-  @extend %font-desc;
+  font-family: "PT Sans", "Tahoma", sans-serif;
+  font-size: 14px;
+  line-height: 21px;
+  color: #333333;
+  text-transform: uppercase;
   text-align: start;
   font-weight: 400;
   display: block;
@@ -20,7 +24,10 @@
 }
 
 .user-data__input-user {
-  @extend %font-title;
+  font-family: "PT Sans", "Tahoma", sans-serif;
+  font-size: 18px;
+  line-height: 26px;
+  color: #000000;
   font-weight: 700;
   text-transform: none;
   text-align: start;
@@ -61,7 +68,10 @@
 
 
 .user-data__input-user::placeholder {
-  @extend %font-title;
+  font-family: "PT Sans", "Tahoma", sans-serif;
+  font-size: 18px;
+  line-height: 26px;
+  color: #000000;
   text-align: start;
   opacity: 30%;
   text-transform: none;

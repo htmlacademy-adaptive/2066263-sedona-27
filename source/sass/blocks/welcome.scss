@@ -12,6 +12,15 @@
     background-image: url("../img/img-index/back-mobile@2x.jpg");
   }
 
+  /*stylelint-disable*/
+  background-image: -webkit-image-set(
+    url("../img/img-index/rocks-sedona-320.webp") 1x,
+    url("../img/img-index/rocks-sedona-320.jpg") 1x,
+    url("../img/img-index/back-mobile@2x.webp") 2x,
+    url("../img/img-index/back-mobile@2x.jpg") 2x
+  );
+  /*stylelint-enable*/
+
   @media (min-width: $tablet-width) {
     padding: 78px 18px 92px 18px;
     background-image: url("../img/img-index/back-tablet.jpg");
@@ -19,6 +28,15 @@
     @media (min-resolution: 2dppx) {
       background-image: url("../img/img-index/back-tablet@2x.jpg");
     }
+
+    /*stylelint-disable*/
+  background-image: -webkit-image-set(
+    url("../img/img-index/back-tablet.webp") 1x,
+    url("../img/img-index/back-tablet.jpg") 1x,
+    url("../img/img-index/back-tablet@2x.webp") 2x,
+    url("../img/img-index/back-tablet@2x.jpg") 2x
+  );
+   /*stylelint-enable*/
   }
 
   @media (min-width: $desktop-width) {
@@ -28,6 +46,15 @@
     @media (min-resolution: 2dppx) {
       background-image: url("../img/img-index/back-desktop@2x.jpg");
     }
+
+    /*stylelint-disable*/
+    background-image: -webkit-image-set(
+      url("../img/img-index/back-desktop.webp") 1x,
+      url("../img/img-index/back-desktop.jpg") 1x,
+      url("../img/img-index/back-desktop@2x.webp") 2x,
+      url("../img/img-index/back-desktop@2x.jpg") 2x
+    );
+   /*stylelint-enable*/
   }
 }
 

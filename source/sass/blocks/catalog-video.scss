@@ -13,7 +13,12 @@
 }
 
 .catalog-video__title {
-  @extend %font-title;
+  font-family: "PT Sans", "Tahoma", sans-serif;
+  font-size: 18px;
+  line-height: 26px;
+  color: #000000;
+  text-transform: uppercase;
+  text-align: center;
   font-weight: 700;
   display: block;
   margin: 0;
@@ -27,7 +32,12 @@
 }
 
 .catalog-video__desc {
-  @extend %font-desc;
+  font-family: "PT Sans", "Tahoma", sans-serif;
+  font-size: 14px;
+  line-height: 21px;
+  color: #333333;
+  text-transform: uppercase;
+  text-align: center;
   font-weight: 400;
   margin: 0;
   padding: 0 20px 0 24px;
@@ -55,23 +65,39 @@
   position: relative;
   margin: 0 auto;
   background-image: url("../img/img-catalog/sedona-poster-mobile.jpg");
-  background-repeat: no-repeat;
-  background-size: cover;
-  cursor: pointer;
 
   @media (min-resolution: 2dppx) {
     background-image: url("../img/img-catalog/sedona-poster-mobile@2x.jpg");
   }
+  /*stylelint-disable*/
+  background-image: -webkit-image-set(
+    url("../img/img-catalog/sedona-poster-mobile.webp") 1x,
+    url("../img/img-catalog/sedona-poster-mobile.jpg") 1x,
+    url("../img/img-catalog/sedona-poster-mobile@2x.webp") 2x,
+    url("../img/img-catalog/sedona-poster-mobile@2x.jpg") 2x
+  );
+   /*stylelint-enable*/
+  background-repeat: no-repeat;
+  background-size: cover;
+  cursor: pointer;
 
   @media (min-width: $tablet-width) {
     width: 648px;
     height: 500px;
     background-image: url("../img/img-catalog/sedona-poster-tablet.jpg");
-    margin-bottom: 24px;
 
     @media (min-resolution: 2dppx) {
       background-image: url("../img/img-catalog/sedona-poster-tablet@2x.jpg");
     }
+    /*stylelint-disable*/
+    background-image: -webkit-image-set(
+      url("../img/img-catalog/sedona-poster-tablet.webp") 1x,
+      url("../img/img-catalog/sedona-poster-tablet.jpg") 1x,
+      url("../img/img-catalog/sedona-poster-tablet@2x.webp") 2x,
+      url("../img/img-catalog/sedona-poster-tablet@2x.jpg") 2x
+    );
+   /*stylelint-enable*/
+    margin-bottom: 24px;
   }
 
   @media (min-width: $desktop-width) {
@@ -82,6 +108,14 @@
     @media (min-resolution: 2dppx) {
       background-image: url("../img/img-catalog/sedona-poster-desktop@2x.jpg");
     }
+    /*stylelint-disable*/
+    background-image: -webkit-image-set(
+      url("../img/img-catalog/sedona-poster-desktop.webp") 1x,
+      url("../img/img-catalog/sedona-poster-desktop.jpg") 1x,
+      url("../img/img-catalog/sedona-poster-desktop@2x.webp") 2x,
+      url("../img/img-catalog/sedona-poster-desktop@2x.jpg") 2x
+    );
+   /*stylelint-enable*/
   }
 }
 
