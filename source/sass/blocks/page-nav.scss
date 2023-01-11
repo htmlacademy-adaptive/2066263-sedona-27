@@ -40,7 +40,7 @@
 
 .page-nav__toggle {
   position: absolute;
-  z-index: 3;
+  z-index: 4;
   top: -56px;
   right: 10px;
   border: none;
@@ -66,6 +66,7 @@
 .page-nav--closed .page-nav__toggle::before {
   content: "";
   position: absolute;
+  z-index: 4;
   top: 17px;
   right: 50%;
   transform: translateX(50%);

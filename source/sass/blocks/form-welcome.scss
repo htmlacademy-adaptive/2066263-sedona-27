@@ -22,9 +22,14 @@
 }
 
 .form-welcome__title {
-  @extend %font-title;
+  font-family: "PT Sans", "Tahoma", sans-serif;
+  font-size: 18px;
+  line-height: 26px;
+  color: #000000;
+  text-transform: uppercase;
+  text-align: center;
   font-weight: 700;
-  margin: 0 0 4px 0;
+  margin: 0 auto 4px auto;
   padding: 0;
 
   @media (min-width: $tablet-width) {
@@ -38,10 +43,10 @@
 }
 
 .form-welcome:nth-child(2) .form-welcome__title {
-  margin: 0 0 2px 0;
+  margin: 0 auto 2px auto;
 
   @media (min-width: $tablet-width) {
-    margin: 0 0 12px 0;
+    margin: 0 auto 12px auto;
   }
 
   @media (min-width: $desktop-width) {

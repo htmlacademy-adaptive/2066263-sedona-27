@@ -1,5 +1,7 @@
 .advantages {
-  @extend %list;
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
   position: relative;
 
   &::before {
@@ -23,8 +25,13 @@
     grid-template-columns: repeat(3, 1fr);
   }
 
-  &__title {
-    @extend %font-title;
+  .advantages__title {
+    font-family: "PT Sans", "Tahoma", sans-serif;
+    font-size: 18px;
+    line-height: 26px;
+    color: #000000;
+    text-transform: uppercase;
+    text-align: center;
 
     @media (min-width: $tablet-width) {
       font-size: 21px;
@@ -35,7 +42,7 @@
       width: 50%;
     }
 
-    &--image {
+    .advantages__title--image {
       color: $white;
       margin-bottom: 10px;
 
@@ -49,13 +56,13 @@
       }
     }
 
-    &--brige {
+    .advantages__title--brige {
       margin-top: 20px;
     }
   }
 
-  &__item {
-    &--image {
+  .advantages__item {
+    .advantages__item--image {
       @media (min-width: $tablet-width) {
         grid-column: 1/-1;
         display: grid;
@@ -65,7 +72,7 @@
       }
     }
 
-    &--area {
+    .advantages__item--area {
       background-color: hsl(0, 0%, 93%);
       padding: 4px 14px 6px 14px;
       margin: 0;
@@ -81,7 +88,7 @@
       }
     }
 
-    &--road {
+    .advantages__item--road {
       @media (min-width: $tablet-width) {
         padding: 32px 16px 30px 16px;
       }
@@ -92,11 +99,11 @@
     }
   }
 
-  &__items {
+  .advantages__items {
     grid-column: 1/-1;
   }
 
-  &__photo {
+  .advantages__photo {
     @media (min-width: $tablet-width) {
       width: 512px;
       object-fit: cover;
@@ -108,20 +115,25 @@
     }
   }
 
-  &__photo--city {
+  .advantages__photo--city {
     @media (min-width: $tablet-width) {
       grid-column: 2/4;
     }
   }
 
-  &__photo--bridge {
+  .advantages__photo--bridge {
     @media (min-width: $tablet-width) {
       grid-column: 1/3;
     }
   }
 
-  &__order {
-    @extend %font-desc;
+  .advantages__order {
+    font-family: "PT Sans", "Tahoma", sans-serif;
+    font-size: 14px;
+    line-height: 21px;
+    color: #333333;
+    text-transform: uppercase;
+    text-align: center;
 
     @media (min-width: $tablet-width) {
       margin: 0;
@@ -132,7 +144,7 @@
       margin-bottom: 22px;
     }
 
-    &--image {
+    .advantages__order--image {
       color: $white;
       margin: 0;
 
@@ -142,14 +154,19 @@
     }
   }
 
-  &__description {
-    @extend %font-desc;
+  .advantages__description {
+    font-family: "PT Sans", "Tahoma", sans-serif;
+    font-size: 14px;
+    line-height: 21px;
+    color: #333333;
+    text-transform: uppercase;
+    text-align: center;
 
     @media (min-width: $tablet-width) {
       margin: 0;
     }
 
-    &--image {
+    .advantages__description--image {
       color: $white;
       margin: 0;
       padding: 16px 0;
@@ -160,7 +177,7 @@
       }
     }
 
-    &--bridge {
+    .advantages__description--bridge {
       @media (min-width: $desktop-width) {
         width: 230px;
         text-align: center;
@@ -169,7 +186,7 @@
     }
   }
 
-  &__block {
+  .advantages__block {
     @media (min-width: $tablet-width) {
       display: block;
     }
@@ -188,7 +205,7 @@
     padding: 10px 40px 4px 40px;
   }
 
-  &--image {
+  .advantages__text--image {
     background-color: $blue;
 
     @media (min-width: $tablet-width) {
@@ -200,7 +217,7 @@
     }
   }
 
-  &--bridge {
+  .advantages__text--bridge {
     grid-column: 3/-1;
     grid-row: 1/-1;
     padding-top: 24px;
