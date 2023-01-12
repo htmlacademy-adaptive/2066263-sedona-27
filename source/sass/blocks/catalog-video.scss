@@ -62,77 +62,36 @@
 }
 
 .catalog-video__content {
-  position: relative;
   margin: 0 auto;
-  background-image: url("../img/img-catalog/sedona-poster-mobile.jpg");
-
-  @media (min-resolution: 2dppx) {
-    background-image: url("../img/img-catalog/sedona-poster-mobile@2x.jpg");
-  }
-  /*stylelint-disable*/
-  background-image: -webkit-image-set(
-    url("../img/img-catalog/sedona-poster-mobile.webp") 1x,
-    url("../img/img-catalog/sedona-poster-mobile.jpg") 1x,
-    url("../img/img-catalog/sedona-poster-mobile@2x.webp") 2x,
-    url("../img/img-catalog/sedona-poster-mobile@2x.jpg") 2x
-  );
-   /*stylelint-enable*/
-  background-repeat: no-repeat;
-  background-size: cover;
   cursor: pointer;
+  position: relative;
 
   @media (min-width: $tablet-width) {
     width: 648px;
     height: 500px;
-    background-image: url("../img/img-catalog/sedona-poster-tablet.jpg");
-
-    @media (min-resolution: 2dppx) {
-      background-image: url("../img/img-catalog/sedona-poster-tablet@2x.jpg");
-    }
-    /*stylelint-disable*/
-    background-image: -webkit-image-set(
-      url("../img/img-catalog/sedona-poster-tablet.webp") 1x,
-      url("../img/img-catalog/sedona-poster-tablet.jpg") 1x,
-      url("../img/img-catalog/sedona-poster-tablet@2x.webp") 2x,
-      url("../img/img-catalog/sedona-poster-tablet@2x.jpg") 2x
-    );
-   /*stylelint-enable*/
     margin-bottom: 24px;
   }
 
   @media (min-width: $desktop-width) {
     width: 800px;
     margin-bottom: 82px;
-    background-image: url("../img/img-catalog/sedona-poster-desktop.jpg");
-
-    @media (min-resolution: 2dppx) {
-      background-image: url("../img/img-catalog/sedona-poster-desktop@2x.jpg");
-    }
-    /*stylelint-disable*/
-    background-image: -webkit-image-set(
-      url("../img/img-catalog/sedona-poster-desktop.webp") 1x,
-      url("../img/img-catalog/sedona-poster-desktop.jpg") 1x,
-      url("../img/img-catalog/sedona-poster-desktop@2x.webp") 2x,
-      url("../img/img-catalog/sedona-poster-desktop@2x.jpg") 2x
-    );
-   /*stylelint-enable*/
   }
-}
 
-.catalog-video__button {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  cursor: pointer;
-  width: 0;
-  height: 0;
-  border-right: none;
-  border-top: 27px solid transparent;
-  border-left: 48px solid rgba(255, 255, 255, 0.7);
-  border-bottom: 27px solid transparent;
-  background-color: transparent;
-  padding: 0;
-  background-size: 300px;
-  margin: 0;
+  &::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 4;
+    cursor: pointer;
+    border-right: none;
+    border-top: 27px solid transparent;
+    border-left: 48px solid rgba(198, 33, 33, 0.7);
+    border-bottom: 27px solid transparent;
+    background-color: transparent;
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+  }
 }

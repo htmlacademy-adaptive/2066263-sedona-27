@@ -12,6 +12,19 @@
   }
 }
 
+.photo-desc__title,
+.photo-desc__autor,
+.photo-desc__likes {
+  font-family: "PT Sans", "Tahoma", sans-serif;
+  font-size: 14px;
+  line-height: 21px;
+  color: #333333;
+  text-transform: uppercase;
+  margin: 0;
+  padding: 0;
+  text-align: start;
+}
+
 .photo-desc__title {
   @media (min-width: $tablet-width) {
     grid-column: 1/2;
@@ -35,20 +48,6 @@
   @media (min-width: $desktop-width) {
     color: $white;
   }
-}
-
-.photo-desc__title,
-.photo-desc__autor,
-.photo-desc__likes {
-  font-family: "PT Sans", "Tahoma", sans-serif;
-  font-size: 14px;
-  line-height: 21px;
-  color: #333333;
-  text-transform: uppercase;
-  text-align: center;
-  margin: 0;
-  padding: 0;
-  text-align: start;
 }
 
 .photo-desc__likes {

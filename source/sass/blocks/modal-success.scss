@@ -23,7 +23,13 @@
 
 
 .modal-success__title {
-  @extend %font-title;
+  font-family: "PT Sans", "Tahoma", sans-serif;
+  font-size: 18px;
+  line-height: 26px;
+  color: #000000;
+  text-transform: uppercase;
+  text-align: center;
+  font-weight: 700;
   margin-bottom: 26px;
 
   @media (min-width: $tablet-width) {
@@ -34,7 +40,14 @@
 }
 
 .modal-success__desc {
-  @extend %font-desc;
+  font-family: "PT Sans", "Tahoma", sans-serif;
+  font-size: 14px;
+  line-height: 21px;
+  color: #333333;
+  text-transform: uppercase;
+  text-align: center;
+  font-weight: 400;
+  margin: 0;
   padding: 0 40px 0 40px;
   margin-bottom: 50px;
 }
@@ -44,11 +57,12 @@
 }
 
 .modal-success__button {
-  @extend %button;
+  color: $white;
+  text-align: center;
   font-size: 18px;
   padding: 18px 76px 14px;
   box-sizing: border-box;
-  background-color: rgba(129, 179, 210, 1);
+  background-color: $blue;
   border: 20px #f2f2f2 solid;
   margin: 0;
   width: 100%;

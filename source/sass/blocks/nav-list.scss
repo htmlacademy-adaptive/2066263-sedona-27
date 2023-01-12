@@ -1,5 +1,7 @@
 .nav-list {
-  @extend %list;
+  margin: 0;
+  padding: 0;
+  list-style: none;
   background-color: $blue;
 
   @media (min-width: $tablet-width) {
@@ -17,8 +19,13 @@
 }
 
 .nav-list__item {
-  @extend %font-title;
-  font-weight: bold;
+  font-family: "PT Sans", "Tahoma", sans-serif;
+  font-size: 18px;
+  line-height: 26px;
+  color: #000000;
+  text-transform: uppercase;
+  text-align: center;
+  font-weight: 700;
   border-bottom: 1px  rgba(1, 1, 1, 0.2) solid;
   box-shadow: 0 1px 0 rgba(255, 255, 255, 0.2), inset 0 1px 0 rgba(255, 255, 255, 0.2);
   box-sizing: border-box;

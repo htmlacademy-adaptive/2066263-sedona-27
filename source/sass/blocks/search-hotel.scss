@@ -12,9 +12,8 @@
     margin: 0 auto 44px auto;
   }
 
-  &__title {
+  .search-hotel__title {
     font-family: "PT Sans", "Tahoma", sans-serif;
-    font-size: 18px;
     line-height: 26px;
     color: #000000;
     text-transform: uppercase;
@@ -29,7 +28,7 @@
     }
   }
 
-  &__description {
+  .search-hotel__description {
     font-family: "PT Sans", "Tahoma", sans-serif;
     font-size: 14px;
     line-height: 21px;
