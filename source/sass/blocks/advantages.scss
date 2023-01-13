@@ -103,6 +103,8 @@
 }
 
 .advantages__photo {
+  display: block;
+
   @media (min-width: $tablet-width) {
     width: 512px;
     object-fit: cover;

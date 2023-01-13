@@ -38,7 +38,9 @@
   }
 
   @media (min-width: $desktop-width) {
-    margin: 0 0 12px 32px;
+    display: block;
+    padding-left: 152px;
+    text-align: start;
   }
 }
 
@@ -50,7 +52,8 @@
   }
 
   @media (min-width: $desktop-width) {
-    margin: 0 0 12px -30px;
+    margin: 0 0 12px;
+    padding-left: 32px;
   }
 }
 

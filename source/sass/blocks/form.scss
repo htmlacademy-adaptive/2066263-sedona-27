@@ -35,6 +35,8 @@
   text-transform: uppercase;
   text-align: end;
   display: block;
+  margin-top: 4px;
+  font-size: 12px;
 
   @media (min-width: $tablet-width) {
     font-size: 14px;
