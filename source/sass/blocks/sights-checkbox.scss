@@ -33,6 +33,7 @@
     background-color: #e5e5e5;
   }
 
+  &:focus,
   &:active {
     background-color: #d5d5d5;
     opacity: 0.3;
@@ -54,6 +55,7 @@
   background-color: #e5e5e5;
 }
 
-.sights-checkbox__input[type="checkbox"]:active + .sights-checkbox__icon-checkbox {
+.sights-checkbox__input[type="checkbox"]:active + .sights-checkbox__icon-checkbox,
+.sights-checkbox__input[type="checkbox"]:focus + .sights-checkbox__icon-checkbox {
   background-color: #d5d5d5;
 }
