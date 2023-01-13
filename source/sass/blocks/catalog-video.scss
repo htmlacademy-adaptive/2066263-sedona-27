@@ -1,8 +1,9 @@
 .catalog-video {
-  margin: 0 auto;
+  margin: 0 20px;
   text-align: center;
 
   @media (min-width: $tablet-width) {
+    margin: 0 auto;
     padding-top: 36px;
   }
 
@@ -12,7 +13,12 @@
 }
 
 .catalog-video__title {
-  @extend %font-title;
+  font-family: "PT Sans", "Tahoma", sans-serif;
+  font-size: 18px;
+  line-height: 26px;
+  color: #000000;
+  text-transform: uppercase;
+  text-align: center;
   font-weight: 700;
   display: block;
   margin: 0;
@@ -26,19 +32,25 @@
 }
 
 .catalog-video__desc {
-  @extend %font-desc;
+  font-family: "PT Sans", "Tahoma", sans-serif;
+  font-size: 14px;
+  line-height: 21px;
+  color: #333333;
+  text-transform: uppercase;
+  text-align: center;
   font-weight: 400;
   margin: 0;
-  padding: 0 22px;
+  padding: 0 18px;
   margin-bottom: 36px;
   position: relative;
 
   @media (min-width: $tablet-width) {
+    padding: 0 18px 0 24px;
     margin-bottom: 90px;
   }
 
   @media (min-width: $desktop-width) {
-    padding: 0 378px;
+    padding: 0;
     margin-bottom: 84px;
   }
 }
@@ -50,53 +62,47 @@
 }
 
 .catalog-video__content {
-  position: relative;
   margin: 0 auto;
-  background-image: url("../img/img-catalog/sedona-poster-mobile.jpg");
-  background-repeat: no-repeat;
-  background-size: cover;
   cursor: pointer;
-
-  @media (min-resolution: 2dppx) {
-    background-image: url("../img/img-catalog/sedona-poster-mobile@2x.jpg");
-  }
+  position: relative;
 
   @media (min-width: $tablet-width) {
     width: 648px;
     height: 500px;
-    background-image: url("../img/img-catalog/sedona-poster-tablet.jpg");
-    margin-bottom: 24px;
-
-    @media (min-resolution: 2dppx) {
-      background-image: url("../img/img-catalog/sedona-poster-tablet@2x.jpg");
-    }
   }
 
   @media (min-width: $desktop-width) {
     width: 800px;
-    margin-bottom: 82px;
-    background-image: url("../img/img-catalog/sedona-poster-desktop.jpg");
-  }
-
-  @media (min-resolution: 2dppx) {
-    background-image: url("../img/img-catalog/sedona-poster-desktop@2x.jpg");
   }
 }
 
-.catalog-video__button {
+.catalog-video__wrap {
+  box-sizing: border-box;
+  position: relative;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 24px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 82px;
+  }
+}
+
+.catalog-video__wrap::before {
   position: absolute;
+  content: "";
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+  z-index: 4;
   cursor: pointer;
-  width: 0;
-  height: 0;
   border-right: none;
   border-top: 27px solid transparent;
   border-left: 48px solid rgba(255, 255, 255, 0.7);
   border-bottom: 27px solid transparent;
   background-color: transparent;
+  box-sizing: border-box;
   padding: 0;
-  background-size: 300px;
   margin: 0;
 }

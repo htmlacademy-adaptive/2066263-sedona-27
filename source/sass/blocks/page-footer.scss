@@ -27,8 +27,12 @@
 }
 
 .page-footer__hashtag {
-  @extend %font-title;
+  font-family: "PT Sans", "Tahoma", sans-serif;
   font-size: 21px;
+  line-height: 26px;
+  color: #000000;
+  text-transform: uppercase;
+  text-align: center;
   font-weight: 700;
   width: 166px;
   text-decoration: none;
