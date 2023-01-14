@@ -19,6 +19,7 @@
   background-color: #e5e5e5;
 }
 
+.list-radio__icon:focus,
 .list-radio__icon:active {
   background-color: #d5d5d5;
   opacity: 0.3;
@@ -32,6 +33,10 @@
 }
 
 .list-radio__input[type="radio"] {
+  &:focus + .list-radio__icon {
+    background-color: #d5d5d5;
+  }
+
   &:active + .list-radio__icon {
     background-color: #d5d5d5;
     opacity: 0.3;
