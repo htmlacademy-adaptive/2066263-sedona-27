@@ -87,6 +87,7 @@
 .gallery__item:first-of-type .gallery__text {
   @media (min-width: $desktop-width) {
     padding: 16px 16px 12px 24px;
-    width: 96.7%;
+    width: 100%;
+    box-sizing: border-box;
   }
 }
