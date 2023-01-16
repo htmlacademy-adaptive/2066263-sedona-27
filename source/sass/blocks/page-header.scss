@@ -99,3 +99,19 @@
     height: max-content;
   }
 }
+
+.page-header--form::after {
+  content: "";
+  position: absolute;
+  right: 50%;
+  transform: translateX(50%);
+  top: 412px;
+  width: 320px;
+  height: 1px;
+  background-color: #e5e5e5;
+  box-shadow: 0 378px 0 0 #e5e5e5, 0 657px 0 0 #e5e5e5, 0 922px 0 0 #e5e5e5, 0 1275px 0 0 #e5e5e5;
+
+  @media (min-width: $tablet-width) {
+    display: none;
+  }
+}

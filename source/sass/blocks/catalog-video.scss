@@ -79,6 +79,7 @@
 .catalog-video__wrap {
   box-sizing: border-box;
   position: relative;
+  cursor: pointer;
 
   @media (min-width: $tablet-width) {
     margin-bottom: 24px;
