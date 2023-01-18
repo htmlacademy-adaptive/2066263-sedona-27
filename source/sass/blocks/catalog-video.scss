@@ -2,6 +2,7 @@
   padding: 0 20px;
   text-align: center;
   margin: 0;
+  position: relative;
 
   @media (min-width: $tablet-width) {
     margin: 0 auto;
@@ -83,19 +84,23 @@
   position: relative;
 }
 
-.catalog-video__wrap::before {
+.catalog-video__button {
   position: absolute;
-  content: "";
-  width: 48px;
-  height: 55px;
   top: 0;
   left: 0;
   bottom: 0;
   right: 0;
+  width: 48px;
+  height: 55px;
   margin: auto;
   cursor: pointer;
+  border: none;
   background-color: rgba(255, 255, 255, 0.7);
   box-sizing: border-box;
   clip-path: polygon(0% 0%, 100% 50%, 0% 100%);
-  z-index: 2;
+
+  &:hover,
+  &:focus {
+    background-color: rgba(255, 255, 255, 1);
+  }
 }
