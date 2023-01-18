@@ -1,6 +1,6 @@
 .advantages-city {
   margin: 0;
-  padding: 14px 18px 8px;
+  padding: 12px 20px 8px;
   list-style-type: none;
   box-sizing: border-box;
 
@@ -9,7 +9,6 @@
     padding: 14px 0 0;
     flex-wrap: wrap;
     width: 100%;
-    justify-content: space-around;
   }
 
   @media (min-width: $desktop-width) {
@@ -28,15 +27,14 @@
   position: relative;
 
   @media (min-width: $tablet-width) {
-    width: 30%;
     text-align: center;
     align-items: center;
-    padding: 144px 20px 44px 20px;
+    flex: 1 1 33.3%;
+    padding: 144px 33px 44px 33px;
   }
 
   @media (min-width: $desktop-width) {
-    padding: 156px 0 44px 0;
-    width: 300px;
+    padding: 156px 50px 44px;
   }
 }
 
@@ -79,11 +77,11 @@
 
 .advantages-city__item--gift {
   @media (min-width: $tablet-width) {
-    padding-top: 140px;
+    padding-top: 134px;
   }
 
   @media (min-width: $desktop-width) {
-    padding-top: 156px;
+    padding-top: 158px;
   }
 }
 
@@ -94,10 +92,10 @@
   left: 0;
 
   @media (min-width: $tablet-width) {
-    top: 48px;
-    width: 66px;
-    height: 79px;
-    left: 49.5%;
+    top: 40px;
+    width: 68px;
+    height: 80px;
+    left: 50%;
     transform: translateX(-50%);
   }
 
@@ -108,7 +106,18 @@
   }
 }
 
+.advantages-city__item--food {
+  @media (min-width: $tablet-width) {
+    padding-top: 140px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 150px;
+  }
+}
+
 .advantages-city__title {
+  flex: 0 1 1;
   margin-bottom: 14px;
 
   @media (min-width: $tablet-width) {
