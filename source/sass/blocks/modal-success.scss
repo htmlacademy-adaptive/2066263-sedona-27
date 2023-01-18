@@ -30,11 +30,13 @@
   text-transform: uppercase;
   text-align: center;
   font-weight: 700;
+  padding: 0 20px;
   margin-bottom: 26px;
 
   @media (min-width: $tablet-width) {
     font-size: 30px;
     line-height: 40px;
+    padding: 0 32px;
     margin-bottom: 24px;
   }
 }
@@ -48,7 +50,7 @@
   text-align: center;
   font-weight: 400;
   margin: 0;
-  padding: 0 40px 0 40px;
+  padding: 0 50px;
   margin-bottom: 50px;
 }
 

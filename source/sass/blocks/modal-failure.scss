@@ -35,8 +35,13 @@
   @media (min-width: $tablet-width) {
     font-size: 30px;
     line-height: 40px;
-    width: 70%;
     margin: 24px auto 24px auto;
+  }
+}
+
+.modal-failure__block {
+  @media (min-width: $tablet-width) {
+    display: block;
   }
 }
 

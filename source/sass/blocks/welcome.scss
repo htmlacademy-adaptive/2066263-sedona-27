@@ -19,7 +19,7 @@
 
   @media (min-width: $tablet-width) {
     margin-top: 0;
-    padding: 78px 18px 92px 18px;
+    padding: 78px 32px 92px 32px;
     /*stylelint-disable*/
     background-image: url("../img/img-index/back-tablet.jpg");
     background-image: -webkit-image-set(
@@ -32,7 +32,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    padding: 78px 18px 96px 18px;
+    padding: 78px 50px 96px 50px;
     /*stylelint-disable*/
     background-image: url("../img/img-index/back-desktop.jpg");
     background-image: -webkit-image-set(

@@ -1,7 +1,13 @@
 .list-radio {
   margin: 0;
+  margin-bottom: 28px;
   padding-left: 0;
   list-style-type: none;
+}
+
+.list-radio__item {
+  padding: 18px 16px 18px;
+  box-sizing: border-box;
 }
 
 .list-radio__icon {
@@ -9,17 +15,17 @@
   width: 46px;
   height: 46px;
   border-radius: 50%;
-  margin-left: -16px;
-  margin-top: -10px;
+  margin-left: -17px;
+  margin-top: -11px;
   background-color: #f2f2f2;
   box-sizing: border-box;
 }
 
-.list-radio__icon:hover {
+.list-radio__icon:hover,
+.list-radio__icon:focus {
   background-color: #e5e5e5;
 }
 
-.list-radio__icon:focus,
 .list-radio__icon:active {
   background-color: #d5d5d5;
   opacity: 0.3;
