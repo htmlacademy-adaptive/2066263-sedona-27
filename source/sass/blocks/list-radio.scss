@@ -6,17 +6,27 @@
 }
 
 .list-radio__item {
-  padding: 18px 16px 18px;
   box-sizing: border-box;
+
+  @media (min-width: $desktop-width) {
+    flex: 1 1 30%;
+  }
 }
+
+.list-radio__control {
+  display: block;
+  padding: 20px 18px 16px;
+  position: relative;
+}
+
 
 .list-radio__icon {
   position: absolute;
   width: 46px;
   height: 46px;
   border-radius: 50%;
-  margin-left: -17px;
-  margin-top: -11px;
+  left: 0;
+  top: 10px;
   background-color: #f2f2f2;
   box-sizing: border-box;
 }
