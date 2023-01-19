@@ -60,7 +60,9 @@
   }
 
   &:active {
-    opacity: 0.3;
+    background-color: #5496bd;
+    color: rgba(255, 255, 255, 0.3);
+    appearance: none;
   }
 
   @media (min-width: $tablet-width) {
@@ -75,6 +77,8 @@
     }
 
     &:active {
+      background-color: $white;
+      color: $black;
       opacity: 0.3;
     }
   }

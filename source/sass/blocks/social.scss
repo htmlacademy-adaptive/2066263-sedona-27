@@ -14,12 +14,17 @@
   background-color: $blue;
   position: relative;
 
-  &:hover {
+  &:hover,
+  &:focus {
     background-color: #669ec0;
     outline: none;
   }
 
   &:active {
+    background-color: #5496bd;
+  }
+
+  &:active::after {
     opacity: 0.3;
   }
 }

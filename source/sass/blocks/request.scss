@@ -63,7 +63,14 @@
   @media (min-width: $desktop-width) {
     display: flex;
     flex-wrap: wrap;
-    justify-content: start;
+    justify-content: flex-start;
+    column-gap: 22px;
     padding: 8px 6px 8px 54px;
+  }
+}
+
+.request__data.list-radio {
+  @media (min-width: $desktop-width) {
+    column-gap: 38px;
   }
 }

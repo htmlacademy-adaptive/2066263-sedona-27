@@ -9,7 +9,7 @@
   box-sizing: border-box;
 
   @media (min-width: $desktop-width) {
-    flex: 1 1 30%;
+    flex: 0 1 30%;
   }
 }
 
@@ -38,13 +38,20 @@
 
 .list-radio__icon:active {
   background-color: #d5d5d5;
+}
+
+.list-radio__icon:active::after {
   opacity: 0.3;
 }
 
-.list-radio__input[type="radio"]:checked + .list-radio__icon {
+.list-radio__input[type="radio"]:checked + .list-radio__icon::after {
+  content: "";
+  position: absolute;
   background-image: url("../img/circle.svg");
-  background-size: 30% 30%;
-  background-position: 50% 50%;
+  width: 16px;
+  height: 16px;
+  top: 15px;
+  left: 15px;
   background-repeat: no-repeat;
 }
 
@@ -55,6 +62,5 @@
 
   &:active + .list-radio__icon {
     background-color: #d5d5d5;
-    opacity: 0.3;
   }
 }
